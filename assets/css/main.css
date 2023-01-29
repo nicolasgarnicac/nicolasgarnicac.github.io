@@ -2987,7 +2987,12 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
+		
+		/* Projects */
+			#projects {
+				width:100%;
+				height:600px;
+			}
 	}
 
 /* Large */
@@ -3012,6 +3017,12 @@ input, select, textarea {
 				#header > .inner {
 					margin-bottom: 0;
 				}
+		/* Projects */
+			#projects {
+				width:100%;
+				height:600px;
+			}
+	
 
 		/* Footer */
 
@@ -3072,6 +3083,12 @@ input, select, textarea {
 					#header h1 br {
 						display: inline;
 					}
+
+		/* Projects */
+			#projects {
+				width:100%;
+				height:600px;
+			}
 
 		/* Footer */
 
@@ -3154,6 +3171,12 @@ input, select, textarea {
 					line-height: 1.75em;
 				}
 
+		/* Projects */
+			#projects {
+				width:100%;
+				height:600px;
+			}
+
 		/* Header */
 
 			#header {
@@ -3207,6 +3230,12 @@ input, select, textarea {
 				#header h1 br {
 					display: none;
 				}
+				
+		/* Projects */
+		#projects {
+			width:100%;
+			height:600px;
+		}
 
 		/* Footer */
 
