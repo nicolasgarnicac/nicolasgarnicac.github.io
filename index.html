@@ -17,8 +17,8 @@
 			<header id="header">
 				<div class="inner">
 					<h1><strong>NICOLAS GARNICA</strong>
-					<br />Biomedical Engineer<br />
-					</a></h1>
+					<p>Biomedical Engineer</p>
+					</h1>
 				</div>
 			</header>
 
@@ -44,32 +44,35 @@
 						<h2>Projects</h2>
 						<div class="row" id="projects" style='overflow:auto;' >
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<div data-modal="projects" id="1" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /><section></section></div>
 								<h3>Chest X-Ray image classification (Pneumonia)</h3>
 								<p>Classification of chest X-Ray images for dection of pneumonia and its infection source (bacteria or virus).</p>
+								<!-- Modal -->
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<div data-modal="projects" id="2" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /><section></section></div>
 								<h3>Ultricies lacinia interdum</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<!-- Modal -->
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<div data-modal="projects" id="3" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /><section></section></div>
 								<h3>Tortor metus commodo</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<!-- Modal -->
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<div data-modal="projects" id="4" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /><section></section></div>
 								<h3>Quam neque phasellus</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<div data-modal="projects" id="5" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /><section></section></div>
 								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<div data-modal="projects" id="6" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /><section></section></div>
 								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
@@ -452,7 +455,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script type="module" src="assets/js/modal.js"></script>
+			<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
