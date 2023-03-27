@@ -1,4 +1,4 @@
-# Esta es una prueba bien ranal
+Esta es una prueba bien ranal
 ***
 akjbfierbfoidbviodsugvboeribvireuovbdiofbvpduibvioerbvierubviprbvdfjvbpsdifbvisdjfbvkdpfbvisbr8iesbver
 esrgbsbsfgsgfn
@@ -11,10 +11,7 @@ srthsrthrsthksjnodngiageiugbanuieueueehdiodjruyfnvdugjeripergherihgeireonmv
 - fgrgefgbv
 - greg
 
-imagen prueba
 ![imagen_prueba](Projects/Chest%20X-Ray%20Pneumonia%20Classification/CNN_128px_test1.png "This is a Titledfgdrhgrth")
-
-
 
 Codigo caballuno
  

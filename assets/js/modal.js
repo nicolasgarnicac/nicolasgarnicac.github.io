@@ -16,9 +16,14 @@ image.forEach(item => {
                 let modalContainer = document.createElement('div');
                 let modal = document.createElement('div');
                 let modalHeader = document.createElement('div');
+                let modalContent = document.createElement('div');
                 let modalTitle = document.createElement('H1');
                 let modalBtn = document.createElement('button');
+                let modalBtnGithub = document.createElement('button');
                 let modalDescription = document.createElement('p');
+                let modalFooter = document.createElement('div');
+
+
 
                 // Assign rigt values based on the Id
                 modalContainer.className = "modal-container";
@@ -29,18 +34,42 @@ image.forEach(item => {
                 modalBtn.textContent = "X";
                 modalBtn.className= "close-modal";
                 modalBtn.setAttribute("id", "close-modal");
+                modalBtnGithub.textContent = 'GitHub';
                 modalDescription.textContent = project.description;
                 body.className = "noScroll";
-
+                modalBtnGithub.className = "button primary icon solid fa-online";
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
 
-                modal.appendChild(modalHeader);
-                modal.appendChild(modalDescription);
+                var xhr = new XMLHttpRequest();
+
+                // set the onload function
+                xhr.onload = function() {
+                
+                  // set the content of the div to the response text
+                  modal.appendChild(modalHeader);
+                  modal.appendChild(modalDescription);
+                  modal.appendChild(modalContent)
+                  modal.appendChild(modalFooter)
+                  modalContent.innerHTML = xhr.responseText;
+                  modalFooter.appendChild(modalBtnGithub);
+                };
+            
+                // open the request
+                xhr.open('GET', project.project_html, true);
+            
+                // send the request
+                xhr.send();
+
+                
 
                 modalContainer.appendChild(modal);
 
                 container.appendChild(modalContainer);
+
+                modalBtnGithub.addEventListener("click", function() {
+                    window.open(project.GitHub_link,"_blank");
+                  });
                 
                 // Close button
                 modalBtn.addEventListener('click', () => {
