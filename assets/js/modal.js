@@ -40,7 +40,8 @@ image.forEach(item => {
                 modalBtnGithub.className = "button primary icon solid fa-online";
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
-
+                
+                //Load an HTML file with the project content
                 var xhr = new XMLHttpRequest();
 
                 // set the onload function
@@ -60,8 +61,6 @@ image.forEach(item => {
             
                 // send the request
                 xhr.send();
-
-                
 
                 modalContainer.appendChild(modal);
 
