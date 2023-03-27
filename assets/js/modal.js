@@ -37,7 +37,7 @@ image.forEach(item => {
                 modalBtnGithub.textContent = 'GitHub';
                 modalDescription.textContent = project.description;
                 body.className = "noScroll";
-                modalBtnGithub.className = "button primary icon solid fa-online";
+                modalBtnGithub.className = "button primary icon brands fa-github";
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
                 
