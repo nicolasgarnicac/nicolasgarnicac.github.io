@@ -3,9 +3,9 @@
         {
             "id": 1,
             "title": "Chest X-Ray Pneumonia Classification",
-            "description": "caballo caballin de la caballera saltarin",
+            "description": "",
             "GitHub_link": "https://github.com/Nicolasgarnica98/X-Ray-Pneumonia-classification",
-            "project_html": "Projects/Chest X-Ray Pneumonia Classification/prueba1.html"
+            "project_html": "Projects/Chest X-Ray Pneumonia Classification/chest_xray_classification.html"
         },
         {
             "id": 2,

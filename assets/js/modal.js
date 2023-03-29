@@ -27,19 +27,35 @@ image.forEach(item => {
 
                 // Assign rigt values based on the Id
                 modalContainer.className = "modal-container";
+                modal.style.width = "85%";
+                modal.style.height = "90%";
+                modalContent.style.width = "85%";
+                modalContent.style.height = "78%";
+                modalContent.style.overflowX = "hidden";
+                modalContent.style.overflowY = "scroll";
                 modal.className = "modal";
                 modal.setAttribute("id", project.id);
                 modalHeader.className = "modal-header";
+                modalHeader.style.height = "12%";
+                modalHeader.style.width = "85%";
+                modalFooter.style.width = "85%";
+                modalFooter.style.height = "10%";
                 modalTitle.textContent = project.title;
                 modalBtn.textContent = "X";
                 modalBtn.className= "close-modal";
                 modalBtn.setAttribute("id", "close-modal");
-                modalBtnGithub.textContent = 'GitHub';
+                modalBtnGithub.textContent = 'View code';
                 modalDescription.textContent = project.description;
                 body.className = "noScroll";
-                modalBtnGithub.className = "button primary icon brands fa-github";
+                modalBtnGithub.className = "button icon brands fa-github";
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
+                modalContent.style.marginLeft = "auto";
+                modalContent.style.marginRight = "auto";
+                modalHeader.style.marginLeft = "auto";
+                modalHeader.style.marginRight = "auto";
+                modalFooter.style.marginLeft = "auto";
+                modalFooter.style.marginRight = "auto";
                 
                 //Load an HTML file with the project content
                 var xhr = new XMLHttpRequest();
@@ -49,11 +65,12 @@ image.forEach(item => {
                 
                   // set the content of the div to the response text
                   modal.appendChild(modalHeader);
-                  modal.appendChild(modalDescription);
-                  modal.appendChild(modalContent)
-                  modal.appendChild(modalFooter)
-                  modalContent.innerHTML = xhr.responseText;
+                  modal.appendChild(modalFooter);
                   modalFooter.appendChild(modalBtnGithub);
+                  modal.appendChild(modalDescription);
+                  modal.appendChild(modalContent);
+                  modalContent.innerHTML = xhr.responseText;
+                  
                 };
             
                 // open the request
