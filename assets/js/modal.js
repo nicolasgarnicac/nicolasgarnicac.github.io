@@ -17,7 +17,7 @@ image.forEach(item => {
                 let modal = document.createElement('div');
                 let modalHeader = document.createElement('div');
                 let modalContent = document.createElement('div');
-                let modalTitle = document.createElement('H1');
+                let modalTitle = document.createElement('H2');
                 let modalBtn = document.createElement('button');
                 let modalBtnGithub = document.createElement('button');
                 let modalDescription = document.createElement('p');
@@ -26,36 +26,46 @@ image.forEach(item => {
 
 
                 // Assign rigt values based on the Id
+                body.className = "noScroll";
+                modal.className = "modal";
+                modal.setAttribute("id", project.id);
                 modalContainer.className = "modal-container";
                 modal.style.width = "60%";
                 modal.style.height = "95%";
-                modalContent.style.width = "75%";
+
+                modalContent.style.width = "85%";
                 modalContent.style.height = "78%";
                 modalContent.style.overflowX = "hidden";
                 modalContent.style.overflowY = "scroll";
-                modal.className = "modal";
-                modal.setAttribute("id", project.id);
-                modalHeader.className = "modal-header";
-                modalHeader.style.height = "12%";
-                modalHeader.style.width = "85%";
-                modalFooter.style.width = "85%";
-                modalFooter.style.height = "10%";
+                modalContent.style.padding = "20px"
+                modalContent.style.marginLeft = "auto";
+                modalContent.style.marginRight = "auto";
+                modalContent.style.marginTop = "5px";
                 modalTitle.textContent = project.title;
+
                 modalBtn.textContent = "X";
                 modalBtn.className= "close-modal";
                 modalBtn.setAttribute("id", "close-modal");
+
                 modalBtnGithub.textContent = 'View code';
-                modalDescription.textContent = project.description;
-                body.className = "noScroll";
-                modalBtnGithub.className = "button icon brands fa-github";
+                modalBtnGithub.className = "button primary icon brands fa-github";
+
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
-                modalContent.style.marginLeft = "auto";
-                modalContent.style.marginRight = "auto";
+                modalHeader.className = "modal-header";
+                modalHeader.style.height = "8%";
+                modalHeader.style.width = "85%";
                 modalHeader.style.marginLeft = "auto";
                 modalHeader.style.marginRight = "auto";
+                modalHeader.style.padding = '5px';
+
+                modalFooter.style.width = "85%";
+                modalFooter.style.height = "10%"
                 modalFooter.style.marginLeft = "auto";
                 modalFooter.style.marginRight = "auto";
+                // modalFooter.style.borderBottom = '2px solid blue';
+                modalFooter.style.boxShadow = '0 5px 5px -5px rgba(0, 0, 0, 0.5)';
+                modalFooter.style.padding= "5px"
                 
                 //Load an HTML file with the project content
                 var xhr = new XMLHttpRequest();
@@ -82,7 +92,7 @@ image.forEach(item => {
                 modalContainer.appendChild(modal);
 
                 container.appendChild(modalContainer);
-
+                
                 modalBtnGithub.addEventListener("click", function() {
                     window.open(project.GitHub_link,"_blank");
                   });
