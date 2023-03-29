@@ -27,9 +27,9 @@ image.forEach(item => {
 
                 // Assign rigt values based on the Id
                 modalContainer.className = "modal-container";
-                modal.style.width = "85%";
-                modal.style.height = "90%";
-                modalContent.style.width = "85%";
+                modal.style.width = "60%";
+                modal.style.height = "95%";
+                modalContent.style.width = "75%";
                 modalContent.style.height = "78%";
                 modalContent.style.overflowX = "hidden";
                 modalContent.style.overflowY = "scroll";
