@@ -108,4 +108,9 @@ image.forEach(item => {
 
         
     })
+
+    // Agregar evento touchstart
+    item.addEventListener('touchstart', function() {
+        alert("ringo ringo")
+    });
 })
