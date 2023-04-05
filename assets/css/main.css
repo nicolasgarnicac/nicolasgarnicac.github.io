@@ -261,6 +261,8 @@ input, select, textarea {
 		border-top-left-radius: 5px;
   		border-top-right-radius: 5px;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #1f1815;
+		font-size: large;
 	  }
 	  
 	  .tab button:hover {
@@ -3336,3 +3338,19 @@ input, select, textarea {
 			}
 
 	}
+
+/* Back button */
+.back-button {
+    border-radius: 50%; /* this makes the button round */
+    padding: 10px 20px; /* add some padding to make the button easier to click */
+    background-color: #49bf9d; /* set the background color */
+    color: white; /* set the text color */
+    border: none; /* remove the border */
+    cursor: pointer; /* add a pointer cursor on hover */
+	height: 50px;
+	width: 50px;
+}
+
+.back-button:hover {
+    background-color: #5cc6a7;
+  } 
