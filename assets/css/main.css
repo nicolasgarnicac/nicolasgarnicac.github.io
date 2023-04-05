@@ -241,6 +241,40 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/* tab view */
+	.tab {
+		overflow: hidden;
+		border: 1px solid #fff;
+		background-color: #ccc;
+	  }
+	  
+	  .tab button {
+		background-color: #ccc;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 10px 15px;
+		transition: 0.3s;
+		margin: 0;
+		border: none;
+	  }
+	  
+	  .tab button:hover {
+		background-color: #f1f1f1;
+	  }
+	  
+	  .tab button.active {
+		background-color: #fff;
+	  }
+	  
+	  .tabcontent {
+		display: none;
+		padding: 10px 12px;
+		border: 1px solid #fff;
+		border-top: none;
+		background-color: #fff;
+	  }
+
 /* Container */
 
 	.container {
@@ -297,6 +331,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		padding: '5px';
 	}
 
 		.row > * {
