@@ -339,6 +339,7 @@ input, select, textarea {
 		box-sizing: border-box;
 		align-items: stretch;
 		padding: '5px';
+		overflow: auto;
 	}
 
 		.row > * {
