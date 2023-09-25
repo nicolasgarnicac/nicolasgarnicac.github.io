@@ -20,7 +20,6 @@ image.forEach(item => {
                 let modalTitle = document.createElement('H2');
                 let modalBtn = document.createElement('button');
                 let modalBtnGithub = document.createElement('button');
-                let modalDescription = document.createElement('p');
                 let modalFooter = document.createElement('div');
 
 
@@ -29,48 +28,61 @@ image.forEach(item => {
                 body.className = "noScroll";
                 modal.className = "modal";
                 modal.setAttribute("id", project.id);
-                modalContainer.className = "modal-container";
-                modal.style.width = "95%";
-                modal.style.height = "95%";
+                modal.style.width = "85%";
+                modal.style.height = "90%";
                 modal.style.overflow = "hidden";
+                modal.style.padding = "0px";
+                modalContainer.className = "modal-container";
 
-                modalContent.style.width = "100%";
-                modalContent.style.height = "100%";
-                modalContent.style.overflowX = "hidden";
-                modalContent.style.overflowY = "scroll";
-                modalContent.style.padding = "20px"
-                modalContent.style.marginLeft = "auto";
-                modalContent.style.marginRight = "auto";
-                modalContent.style.marginTop = "5px";
-                modalTitle.textContent = project.title;
-
+                // HEADER
                 modalBtn.textContent = "X";
+                modalBtn.style.color = "White";
                 modalBtn.className= "close-modal";
                 modalBtn.setAttribute("id", "close-modal");
                 modalBtn.style.height="30px";
                 modalBtn.style.width="30px";
                 modalBtn.style.textAlign="center";
+                modalBtn.style.backgroundColor = "#a2a2a2";
 
-                modalBtnGithub.textContent = 'View code';
-                modalBtnGithub.className = "button primary small icon brands fa-github";
-                modalBtnGithub.style.padding = "1px";
-
+                modalTitle.textContent = project.title;
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
                 modalHeader.className = "modal-header";
-                modalHeader.style.height = "8%";
+                modalHeader.style.height = "14%";
                 modalHeader.style.width = "100%";
                 modalHeader.style.marginLeft = "auto";
                 modalHeader.style.marginRight = "auto";
-                modalHeader.style.padding = '0px';
+                modalHeader.style.paddingLeft = '5%';
+                modalHeader.style.paddingRight = '5%';
+                modalHeader.style.paddingTop = '2%';
+                modalHeader.style.backgroundColor = "#a2a2a2";
+                modalTitle.style.color="white";
 
-                modalFooter.style.width = "100%";
-                modalFooter.style.height = "10%"
+                
+
+
+                // CONTENT
+                modalContent.style.width = "90%";
+                modalContent.style.height = "70%";
+                modalContent.style.overflowX = "hidden";
+                modalContent.style.overflowY = "auto";
+                modalContent.style.marginLeft = "auto";
+                modalContent.style.marginRight = "auto";
+                modalContent.style.paddingTop = "2%";
+                modalContent.style.paddingRight = "2%"; 
+
+                // FOOTER
+                modalBtnGithub.textContent = 'View code';
+                modalBtnGithub.className = "button primary small icon brands fa-github";
+                modalFooter.style.width = "90%";
+                modalFooter.style.height = "15%";
                 modalFooter.style.marginLeft = "auto";
                 modalFooter.style.marginRight = "auto";
                 // modalFooter.style.borderBottom = '2px solid blue';
-                modalFooter.style.boxShadow = '0 5px 5px -5px rgba(0, 0, 0, 0.5)';
-                // modalFooter.style.padding= "5px"
+                modalFooter.style.backgroundColor = '';
+                modalFooter.appendChild(modalBtnGithub);
+                modalFooter.style.paddingTop= "15px"
+                modalFooter.style.paddingBottom= "15px"
                 
                 //Load an HTML file with the project content
                 var xhr = new XMLHttpRequest();
@@ -80,10 +92,8 @@ image.forEach(item => {
                 
                   // set the content of the div to the response text
                   modal.appendChild(modalHeader);
-                  modal.appendChild(modalFooter);
-                  modalFooter.appendChild(modalBtnGithub);
-                  modal.appendChild(modalDescription);
                   modal.appendChild(modalContent);
+                  modal.appendChild(modalFooter);
                   modalContent.innerHTML = xhr.responseText;
                   
                 };
