@@ -40,8 +40,8 @@
 	// Touch?
 		if (browser.mobile) {
 
-			// // Turn on touch mode.
-			// 	$body.addClass('is-touch');
+			// Turn on touch mode.
+				$body.addClass('is-touch');
 
 			// Height fix (mostly for iOS).
 				window.setTimeout(function() {
