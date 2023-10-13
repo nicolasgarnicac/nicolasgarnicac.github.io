@@ -66,11 +66,11 @@ image.forEach(item => {
                 modalContent.style.width = "90%";
                 modalContent.style.height = "70%";
                 modalContent.style.overflowX = "hidden";
-                modalContent.style.overflowY = "auto";
+                modalContent.style.overflowY = "scroll";
                 modalContent.style.marginLeft = "auto";
                 modalContent.style.marginRight = "auto";
                 modalContent.style.paddingTop = "2%";
-                modalContent.style.paddingRight = "2%"; 
+                modalContent.style.paddingRight = "2%";
 
                 // FOOTER
                 modalBtnGithub.textContent = 'View code';

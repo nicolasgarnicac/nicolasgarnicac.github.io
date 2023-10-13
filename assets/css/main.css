@@ -3065,13 +3065,13 @@ input, select, textarea {
 
 /* Touch */
 
-	body.is-touch .image.thumb:before {
+	/* body.is-touch .image.thumb:before {
 		opacity: 0.5 !important;
 	}
 
 	body.is-touch .image.thumb:after {
 		display: none !important;
-	}
+	} */
 
 	body.is-touch #header {
 		background-attachment: scroll;
@@ -3401,4 +3401,31 @@ input, select, textarea {
 
 .back-button:hover {
     background-color: #5cc6a7;
-  } 
+  }
+  
+.aboutme-div{
+	width: 100%;
+	background-color: hsl(0, 7%, 97%);
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	/* border: 3px solid #5cc6a7; */
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	/* color: #fff; */
+	border-radius: 10px;
+}
+
+.project-div{
+	/* background-color: #3eb08f; */
+	/* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
+	border-radius: 10px ;
+	/* background-color: hsl(0, 7%, 97%); */
+	background-color: #fff;
+	padding-bottom: 4%;
+	/* border: 1px solid #5cc6a7; */
+}
+
+.educskills-div{
+	background-color: #fff;
+}
