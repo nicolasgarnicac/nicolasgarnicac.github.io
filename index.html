@@ -11,17 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="background-color: hsl(0, 7%, 97%);">
 			<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<h1><strong>NICOLAS GARNICA</strong></h1>
+					<h1><strong>Nicolas Garnica</strong></h1>
 					<h4><p>Biomedical Engineer</p></h4>
 					
 				</div>
 			</header>
 		<!-- Main -->
-			<div id="main">
+			<div id="main" style="background-color: hsl(0, 7%, 97%);">
 				<!-- ABOUT ME -->
 					<section id="one">
 						<div class="aboutme-div">
@@ -48,9 +48,6 @@
 						   most healthcare problems, applying engineering and biotechnology knowledge. I am eager to learn 
 						   the most from every professional experience, in order to improve my skills, productivity and 
 						   efficiency in the industry, to provide a better service for people's health care.</p>
-						<ul class="actions">
-							<li><a href="https://1drv.ms/b/s!Aocxj1Hi_hVIldlmDgRjNJq97gLZog?e=0XzTph" class="button primary" target="_blank">View resume </a></li>
-						</ul>
 					</div>
 				</section>
 
@@ -60,13 +57,16 @@
 							<h2>Projects</h2>
 						</header>
 
-							  <div class="row" style='width:108%; padding-right:10px;' >
+							  <div class="row" style='width:108%; padding-right:10px; overflow-y: auto; height: 10%;' >
 								<article class="col-6 col-12-xsmall work-item">
-									<div class="project-div">
-									<div data-modal="projects" id="1" class="image fit thumb"><img src="images/thumbs/01.jpg" alt=""/><section></section></div>
-									<h3 style="padding-left: 2%;">Chest X-Ray image classification (Pneumonia)</h3>
-									<p style="padding-left: 2%; padding-right:2%";>Classification of chest X-Ray images for dection of pneumonia and its infection source (bacteria or virus).</p>
+									<div class="project-div" style="background-image: url(images/thumbs/01.jpg);">
+									<div style="background-color: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; border-radius: 5px;" >
+									<div style="background-color: rgba(0, 0, 0, 0); width: 100%; height: 100%; border-radius: 5px;" id =1 data-modal="projects" id="1">
+									<h3 style="padding-left: 5%; padding-top: 8%; color: #fff; font-weight: bold;">Chest X-Ray image classification (Pneumonia)</h3>
+									<p style="padding-left: 5%; padding-right:2%; color: #fff" ;>Classification of chest X-Ray images for dection of pneumonia and its infection source (bacteria or virus).</p>
 									</div>
+									</div>
+								</div>
 									<!-- <section></section> -->
 									<!-- Modal -->
 								</article>
@@ -125,9 +125,9 @@
 							<div class="col-8 col-12-small">
 								<form method="post" action="#">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" style="background-color: #fff;"/></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" style="background-color: #fff;"/></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" style="background-color: #fff;"></textarea></div>
 									</div>
 								</form>
 								<ul class="actions">

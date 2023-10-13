@@ -130,6 +130,4 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
   }
 
-  window.addEventListener('load', function() {
-	document.getElementById('btn_tab1').click();
-  });
+  
