@@ -9,8 +9,9 @@
         },
         {
             "id": 2,
-            "title": "Title 2",
-            "description": "description project 2"
+            "title": "Bone marrow cell classification",
+            "description": "description project 2",
+            "project_html": "Projects/Bone Marrow Cell Classification/bone_marrow_cell_classification.html"
         },
         {
             "id": 3,

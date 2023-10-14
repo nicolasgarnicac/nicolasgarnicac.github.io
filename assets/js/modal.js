@@ -29,10 +29,11 @@ image.forEach(item => {
                 body.className = "noScroll";
                 modal.className = "modal";
                 modal.setAttribute("id", project.id);
-                modal.style.width = "85%";
+                modal.style.width = "90%";
                 modal.style.height = "90%";
                 modal.style.overflow = "hidden";
                 modal.style.padding = "0px";
+                modal.style.backgroundColor = "hsl(0, 7%, 97%)";
                 modalContainer.className = "modal-container";
 
                 // HEADER
@@ -49,7 +50,7 @@ image.forEach(item => {
                 modalHeader.appendChild(modalTitle);
                 modalHeader.appendChild(modalBtn);
                 modalHeader.className = "modal-header";
-                modalHeader.style.height = "14%";
+                modalHeader.style.height = "12%";
                 modalHeader.style.width = "100%";
                 modalHeader.style.marginLeft = "auto";
                 modalHeader.style.marginRight = "auto";
@@ -57,20 +58,21 @@ image.forEach(item => {
                 modalHeader.style.paddingRight = '5%';
                 modalHeader.style.paddingTop = '2%';
                 modalHeader.style.backgroundColor = "#a2a2a2";
-                modalTitle.style.color="white";
+                modalTitle.style.color="#d6f3f8";
 
                 
 
 
                 // CONTENT
                 modalContent.style.width = "90%";
-                modalContent.style.height = "70%";
+                modalContent.style.height = "80%";
                 modalContent.style.overflowX = "hidden";
-                modalContent.style.overflowY = "scroll";
+                modalContent.style.overflowY = "auto";
                 modalContent.style.marginLeft = "auto";
                 modalContent.style.marginRight = "auto";
                 modalContent.style.paddingTop = "2%";
                 modalContent.style.paddingRight = "2%";
+                modalContent.style.backgroundColor = "hsl(0, 7%, 97%)";
 
                 // FOOTER
                 modalBtnGithub.textContent = 'View code';
@@ -94,7 +96,7 @@ image.forEach(item => {
                   // set the content of the div to the response text
                   modal.appendChild(modalHeader);
                   modal.appendChild(modalContent);
-                  modal.appendChild(modalFooter);
+                //   modal.appendChild(modalFooter);
                   modalContent.innerHTML = xhr.responseText;
                   
                 };
