@@ -3200,7 +3200,7 @@ input, select, textarea {
     margin: 10px; */
     text-align: center;
 	width: 100%;
-	height: 2000px;
+	height: auto;
 }
 
 @media (min-width: 768px) {
@@ -3209,6 +3209,6 @@ input, select, textarea {
     }
 	.box{
 		width: 100%;
-		height: 1000px;
+		height: auto;
 	}
 }
