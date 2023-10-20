@@ -3157,7 +3157,7 @@ input, select, textarea {
 
 .project-div{
 	/* background-color: #3eb08f; */
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 8px ;
 	/* background-color: hsl(0, 7%, 97%); */
 	background-color: #fff;
