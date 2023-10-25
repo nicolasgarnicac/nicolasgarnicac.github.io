@@ -9,7 +9,7 @@ let projectsList = data.list;
 // click event for the project images
 image.forEach(item => {
     // console.log(item.id)
-    item.addEventListener('touchstart', (e) => {
+    item.addEventListener('click', (e) => {
             projectsList.forEach(project => {
                 if (e.target.id == project.id) {
                     // create modal inside click event
