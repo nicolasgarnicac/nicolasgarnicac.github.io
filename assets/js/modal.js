@@ -22,8 +22,6 @@ image.forEach(item => {
                     let modalBtn = document.createElement('button');
                     let modalBtnGithub = document.createElement('button');
 
-
-
                     // Assign rigt values based on the Id
                     body.className = "noScroll";
                     modal.className = "modal";

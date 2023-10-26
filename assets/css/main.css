@@ -3144,11 +3144,8 @@ input, select, textarea {
   
 .aboutme-div{
 	width: 100%;
-	background-color: #fff;
-	padding-top: 2%;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-bottom: 2%;
+	background-color: #fafafa;
+	padding: 2%;
 	/* border: 3px solid #5cc6a7; */
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	/* color: #fff; */
@@ -3160,7 +3157,7 @@ input, select, textarea {
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 8px ;
 	/* background-color: hsl(0, 7%, 97%); */
-	background-color: #fff;
+	background-color: #fafafa;
 	padding: 0%;
 	width: 100%; 
 	height: 200px;
@@ -3168,13 +3165,14 @@ input, select, textarea {
 	/* border: 1px solid #5cc6a7; */
 }
 
-.educskills-div{
-	background-color: hsl(0, 7%, 97%);
+.educskills-div {
+    display: flex;
+    flex-direction: column;
 }
 
 .getintouch-div{
 	width: 100%;
-	background-color: #fff;
+	background-color: #fafafa;
 	padding-top: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
@@ -3195,15 +3193,18 @@ input, select, textarea {
 /* Style for the individual boxes */
 .box {
     flex: 1; /* Each box takes an equal share of the available space */
-    color: white;
+    color: #fafafa;
     /* padding: 20px;
     margin: 10px; */
-    text-align: center;
+    /* text-align: center; */
 	width: 100%;
 	height: auto;
 }
 
 @media (min-width: 768px) {
+	.educskills-div {
+		flex-direction: row;
+	}
     .container {
         flex-direction: row; /* Align boxes horizontally for larger screens */
     }
@@ -3211,4 +3212,25 @@ input, select, textarea {
 		width: 100%;
 		height: auto;
 	}
+}
+
+
+/* Style for each individual icon and its description */
+.icon {
+    display: flex;
+    align-items: center;
+	/* align-items: start; */
+    margin-right: 20px; /* Adjust the spacing between icons */
+	padding: 2%;
+}
+
+.icon img {
+    width: 35px; /* Set the desired width for the icons */
+    height: 35px; /* Set the desired height for the icons */
+}
+
+.icon p {
+    margin: 0;
+    margin-left: 10px; /* Adjust the spacing between the icon and description */
+    font-size: 16px; /* Set the font size for descriptions */
 }
