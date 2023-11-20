@@ -12,15 +12,102 @@
             <h2>
                 <p style="color: #3b6668; text-align: left;">Introduction</p>
             </h2>
-            <p style="color: #787878; text-align: left;">Pneumonia is a common disease that affects the lungs of the patient, generating inflammation and obstruction of the intake airways, which can lead to suffocation and death. The principal reason behind this disease is the contact of external
-                microorganisms with the lung parenchyma, and the action of the immune system to fight the infection is what causes the inflammation. The most common microorganisms found responsible for the pneumonia infection are either bacterial or viral
-                in origin; these microorganisms are present in the air, which makes them easy to inhale while breathing.</p>
+            <p style="color: #787878; text-align: left;">Pneumonia is a common disease that affects the lungs, generating inflammation and obstruction of the airways, which can lead to suffocation and death. The principal reason behind this disease is the contact of external microorganisms with the lung parenchyma, and the action taken by the immune system to fight the infection is what causes the inflammation. The most common microorganisms found responsible for the pneumonia infection are either bacterial or viral in origin; these microorganisms are present in the air, which makes them easy to inhale while breathing.
+            Evaluation and diagnosis of the disease are always important parts of the treatment pipeline. Pneumonia is commonly diagnosed with respect to the patient's symptoms, such as cough, fever, general weakness, and shortness of breath. x-ray images taken from the patient's chest are the most widely method for pneumonia diagnose. 
+            <br>
+            <img style="width: 60%; height: auto; padding: 3%; justify-content: center;" src="/Projects/Chest X-Ray Pneumonia Classification/pneumonia_example.jpg">
+            <br>
+            As illustrated on the picture above, the congestion of the bronchi and alveoli will cause a higher intensity zone when taking an x-ray image from an infected patient, which helps to diagnose the pneumonia.
+            
+                
+            The treatment for pneumonia will depend on the origin of the pathogen, and to determine the origin, the doctor will request a tissue sample or mucus sample from the lungs in order to make a bacteria culture or a viral detection. This process takes some time and is uncomfortable for the patient. Determining the kind of pathogen is essential because if it is bacteria, it could be treated with antibiotics, which would not work with virus infections.
+            
+            <br>In this project, I will create a CNN model for classifying x-ray images from people with pneumonia in order to improve the diagnosis time and patient's comfort.
+            </p>
+            <br>
+
             <h2>
-                <p style="color: #3b6668; text-align: left;">Introduction</p>
+                <p style="color: #3b6668; text-align: left;">Dataset exploration</p>
             </h2>
-            <p style="color: #787878; text-align: left;">Pneumonia is a common disease that affects the lungs of the patient, generating inflammation and obstruction of the intake airways, which can lead to suffocation and death. The principal reason behind this disease is the contact of external
-                microorganisms with the lung parenchyma, and the action of the immune system to fight the infection is what causes the inflammation. The most common microorganisms found responsible for the pneumonia infection are either bacterial or viral
-                in origin; these microorganisms are present in the air, which makes them easy to inhale while breathing.</p>
+            <p style="color: #787878; text-align: left;">
+         The original dataset can be found in: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia. It contains 3 classes divided by folders (train, test, val):
+        
+        <ul style="color: #787878; text-align: left;">
+        <li style="font-size: 18px;">Virus pneumonia</li>
+        
+        <li style="font-size: 18px;">Bacteria pneumonia</li>
+        
+        <li style="font-size: 18px;">Normal (No pneumonia)</li>
+        </ul>
+
+        I downloaded the dataset and merged all the folders into one unique folder in order to split the dataset in a random way into train, val and test folders. Then I uploaded the folder into my personal Onedrive for later image analysis.
+
+        <br>
+        <div class="codeDiv">
+            <pre><code class="` language-`" style="font-size: 14px;">
+                def divide_dataset_in_folders(df_img):
+                    os.mkdir('./dataset/train')
+                    os.mkdir('./dataset/test')
+                    os.mkdir('./dataset/val')
+                    df_train, df_test = train_test_split(df_img,test_size=0.15)
+                    df_train, df_val = train_test_split(df_train,test_size=0.1)
+            
+                    folder_array = ['./dataset/train', './dataset/test', './dataset/val']
+                    df_array = [df_train,df_test,df_val]
+                    for i in tqdm(range(0,len(folder_array)),'Moving files: '):
+                        for file in df_array[i]:
+                            source = file
+                            shutil.move(source, folder_array[i])
+            </code></pre>
+        </div>
+        <br>
+        
+        For better understanfing of the data I am dealing with it was necessary to visualize some random images of my dataset:
+        <br>
+        <div class="codeDiv">
+            <pre><code class="` language-`" style="font-size: 14px;">
+            def data_exploration(img_array, labels_txt):
+               fig1, ax1 = plt.subplots(2,3)
+               plot_img = []
+               plot_lbl = []
+               for i in range(0,6):
+                   img_indx = np.random.randint(0,len(img_array)-1)
+                   img = img_array[img_indx]
+                   img_label = labels_txt[img_indx]
+                   plot_img.append(img)
+                   plot_lbl.append(img_label)
+        
+            fig1, ax1 = plt.subplots(2,3)
+            fig1.suptitle('\nDataset exploration\n')
+            ax1[0][0].set_title(f'Img size: {plot_img[0].shape}\n Label: {plot_lbl[0]}')
+            ax1[0][0].imshow(plot_img[0], cmap='gray')
+            ax1[0][0].axis('off')
+            ax1[0][1].set_title(f'Img size: {plot_img[1].shape}\n Label: {plot_lbl[1]}')
+            ax1[0][1].imshow(plot_img[1], cmap='gray')
+            ax1[0][1].axis('off')
+            ax1[0][2].set_title(f'Img size: {plot_img[2].shape}\n Label: {plot_lbl[2]}')
+            ax1[0][2].imshow(plot_img[2], cmap='gray')
+            ax1[0][2].axis('off')
+            ax1[1][0].set_title(f'Img size: {plot_img[3].shape}\n Label: {plot_lbl[3]}')
+            ax1[1][0].imshow(plot_img[3], cmap='gray')
+            ax1[1][0].axis('off')
+            ax1[1][1].set_title(f'Img size: {plot_img[4].shape}\n Label: {plot_lbl[4]}')
+            ax1[1][1].imshow(plot_img[4], cmap='gray')
+            ax1[1][1].axis('off')
+            ax1[1][2].set_title(f'Img size: {plot_img[5].shape}\n Label: {plot_lbl[5]}')
+            ax1[1][2].imshow(plot_img[5], cmap='gray')
+            ax1[1][2].axis('off')
+            fig1.tight_layout()
+            plt.show()y   
+            </code></pre>
+        </div>
+        <br>
+
+          <img style="width: 50%; height: auto;" src="/Projects/Chest X-Ray Pneumonia Classification/Dataset_exploration.png">
+
+            </p>
+
+            
             <h2>
                 <p style="color: #3b6668; text-align: left;">Introduction</p>
             </h2>
@@ -54,7 +141,9 @@
     </div>
     <div class="box" style="background-color: hsla(0, 7%, 97%, 0); border-color: hsla(0, 7%, 97%, 0); height: auto; padding: 5%; align-items: center;padding-top: 0%;">
         <ul class="actions">
-                <li><a href="https://github.com/Nicolasgarnica98/Bone-Marrow-Cell-Classification" class="button primary small icon brands fa-github" target="_blank" style="background-color: #3b6668; border: 3px solid #3b6668; right: 10%; bottom: 8%; position: absolute; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);">View code </a></li>
+                <li><a href="https://github.com/Nicolasgarnica98/Bone-Marrow-Cell-Classification" class="view_resume_btn" target="_blank" style="background-color: #3b6668; border: 3px solid #3b6668; right: 10%; bottom: 8%; position: absolute; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);"> 
+                    <i class="fab fa-github github-icon" style="font-size: x-large; padding: 5%;"></i>View code
+                </a></li>
             </ul>
     </div>
 </body>

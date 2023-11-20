@@ -3147,8 +3147,8 @@ input, select, textarea {
 	background-color: #fafafa;
 	padding-top: 3%;
 	padding-bottom: 0.1%;
-	padding-left: 2%;
-	padding-right: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
 	/* border: 3px solid #5cc6a7; */
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	/* color: #fff; */
@@ -3246,3 +3246,28 @@ input, select, textarea {
     margin-left: 10px; /* Adjust the spacing between the icon and description */
     font-size: 16px; /* Set the font size for descriptions */
 }
+
+.view_resume_btn {
+	background-color: #3b6668;
+	width: 200px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.3s;
+	border-radius: 8px;
+	color: #fefefe;
+	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
+	
+}
+
+.view_resume_btn:hover
+{
+	color: #3b6668;
+    transform: scale(1.02);
+	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
+    /* box-shadow: 10px 5px 40px 8px #3b6668; */
+	background-image: linear-gradient(to right, #244869, #3b6668);
+}
+
