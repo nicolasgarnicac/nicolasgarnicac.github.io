@@ -3145,11 +3145,15 @@ input, select, textarea {
 .aboutme-div{
 	width: 100%;
 	background-color: #fafafa;
-	padding: 2%;
+	padding-top: 3%;
+	padding-bottom: 0.1%;
+	padding-left: 2%;
+	padding-right: 2%;
 	/* border: 3px solid #5cc6a7; */
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	/* color: #fff; */
 	border-radius: 8px;
+	text-align: left;
 }
 
 .project-div{
@@ -3178,7 +3182,7 @@ input, select, textarea {
 	padding-right: 2%;
 	padding-bottom: 2%;
 	/* border: 3px solid #5cc6a7; */
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	/* color: #fff; */
 	border-radius: 8px;
 }
@@ -3201,7 +3205,7 @@ input, select, textarea {
 	height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
 	.educskills-div {
 		flex-direction: row;
 	}
@@ -3211,6 +3215,14 @@ input, select, textarea {
 	.box{
 		width: 100%;
 		height: auto;
+		border-radius: 8px 8px 8px 8px;
+	}
+
+}
+@media screen and (max-width: 500px){
+	.aboutme-div{
+		padding: 6%;
+		padding-bottom: 2%;
 	}
 }
 
