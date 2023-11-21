@@ -3267,7 +3267,7 @@ input, select, textarea {
 	color: #3b6668;
     transform: scale(1.02);
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
-    /* box-shadow: 10px 5px 40px 8px #3b6668; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699);
 	background-image: linear-gradient(to right, #244869, #3b6668);
 }
 
