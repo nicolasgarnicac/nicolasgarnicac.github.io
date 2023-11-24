@@ -3178,6 +3178,7 @@ input, select, textarea {
 	width: 100%;
 	background-color: #fafafa;
 	padding: 4%;
+	padding-bottom: 0.1%;
 	/* border: 3px solid #5cc6a7; */
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	/* color: #fff; */
