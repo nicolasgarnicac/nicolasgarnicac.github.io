@@ -3169,6 +3169,23 @@ input, select, textarea {
 	/* border: 1px solid #5cc6a7; */
 }
 
+.project-description-div{
+	background-color: rgba(0, 0, 0, 0); 
+	width: 100%; 
+	height: 100%; 
+	border-radius: 5px;
+}
+
+.project-description-div:hover
+{
+    /* transform: scale(1.02); */
+	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
+	background-image: linear-gradient(to right, #244869, #3b6668);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
 .educskills-div {
     display: flex;
     flex-direction: column;
@@ -3263,9 +3280,9 @@ input, select, textarea {
 .view_resume_btn:hover
 {
 	color: #3b6668;
-    transform: scale(1.02);
+    transform: scale(1.03);
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699);
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
 	background-image: linear-gradient(to right, #244869, #3b6668);
 }
 
