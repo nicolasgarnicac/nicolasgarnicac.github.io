@@ -9,6 +9,7 @@
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    border-radius: 8px;
   }
 
   /* Modal Content/Box */
