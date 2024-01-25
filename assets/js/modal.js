@@ -32,6 +32,7 @@ image.forEach(item => {
                     modal.style.padding = "0px";
                     modal.style.backgroundColor = "hsl(0, 7%, 97%)";
                     modalContainer.className = "modal-container";
+                    modal.style.cursor = "default";
 
                     // HEADER
 
