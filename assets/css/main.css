@@ -2802,10 +2802,10 @@ input, select, textarea {
 		justify-content: space-between;
 		background: rgba(255, 255, 255, 0);
 		/* border: 1px solid #3b6668; */
-		/* backdrop-filter: blur( 9px );
+		backdrop-filter: blur( 9px );
 		-webkit-backdrop-filter: blur( 9px );
 		border: 1px solid rgba( 255, 255, 255, 0.18 );
-		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	}
 
 	.close-modal{
@@ -2833,7 +2833,7 @@ input, select, textarea {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 1.25em;
+		font-size: 1.1em;
 		font-weight: bold;
 	}
 

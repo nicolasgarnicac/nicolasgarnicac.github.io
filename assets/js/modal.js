@@ -56,7 +56,7 @@ image.forEach(item => {
                     modalContent.style.marginRight = "auto";
                     modalContent.style.paddingTop = "2%";
                     modalContent.style.paddingLeft = "2%";
-                    modalContent.style.backgroundColor = "hsl(0, 7%, 97%)";
+                    modalContent.style.backgroundColor = "hsl(0, 3%, 92%)";
                     
                     //Load an HTML file with the project content
                     var xhr = new XMLHttpRequest();
