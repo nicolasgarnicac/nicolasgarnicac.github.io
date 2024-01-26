@@ -2774,7 +2774,7 @@ input, select, textarea {
 		overflow: hidden;
 		backdrop-filter: blur( 25px );
 		-webkit-backdrop-filter: blur( 25px );
-		border: 1px solid rgba( 255, 255, 255, 0.18 );
+		border: 5px solid rgba(255, 255, 255, 0.123);
 	}
 	.modal{
 		
@@ -2788,7 +2788,7 @@ input, select, textarea {
 		text-align: left;
 		overflow: hidden;
 		cursor: default;
-		border: 1px solid #3b6668;
+		border: 2px solid #3b6668;
 		
 	}
 	.modal-header{
