@@ -20,7 +20,7 @@ image.forEach(item => {
                     let modalContent = document.createElement('div');
                     let modalTitle = document.createElement('H2');
                     let modalBtn = document.createElement('button');
-                    let modalBtnGithub = document.createElement('button');
+                    let modalBtnGithub = document.createElement('a');
 
                     // Assign rigt values based on the Id
                     body.className = "noScroll";
@@ -58,6 +58,23 @@ image.forEach(item => {
                     modalContent.style.paddingLeft = "2%";
                     modalContent.style.backgroundColor = "hsl(0, 3%, 92%)";
                     
+                    // GITHUB BUTON
+                    modalBtnGithub.className= "btn-github";
+                    modalBtnGithub.href = "";
+                    modalBtnGithub.target="_blank";
+                    var iconElement = document.createElement("i");
+                    iconElement.className = "fab fa-github github-icon";
+                    iconElement.style.fontSize = "large";
+                    iconElement.style.padding = "5%";
+
+                    // Append the icon element to the anchor element
+                    modalBtnGithub.appendChild(iconElement);
+
+                    // Append the text node "View code" to the anchor element
+                    modalBtnGithub.appendChild(document.createTextNode("View code"));
+
+
+
                     //Load an HTML file with the project content
                     var xhr = new XMLHttpRequest();
 
@@ -67,6 +84,7 @@ image.forEach(item => {
                         // set the content of the div to the response text
                         modal.appendChild(modalHeader);
                         modal.appendChild(modalContent);
+                        modal.appendChild(modalBtnGithub);
                         //   modal.appendChild(modalFooter);
                         modalContent.innerHTML = xhr.responseText;
 

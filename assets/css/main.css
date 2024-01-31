@@ -2759,7 +2759,8 @@ input, select, textarea {
 		overflow: hidden;
 	}		
 
-/* Modal */
+
+/* DOCUMENT AND MODAL!!! */
 	.modal-container {
 		display: flex;
 		align-items: center;
@@ -2838,6 +2839,48 @@ input, select, textarea {
 	}
 
 
+	.btn-github{
+		/* background-color: #3b6668; */
+		width: 170px;
+		height: 55px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all 0.3s;
+		border-radius: 8px;
+		color: #fefefe;
+		right: 15%;
+		bottom: 8%; 
+		position: absolute;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+		font-size: 0.85em;
+		border:  2px solid #244869;
+		background: linear-gradient(145deg, #244869, #3b6668);
+		
+	}
+
+	.btn-github:hover{
+		color: #fff;
+    	transform: scale(1.04);
+		/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
+    	/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
+		font-size: 0.95em;
+	}
+
+	.document-div{
+		border-radius: 10px;
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        box-shadow:  11px 11px 24px #b5b5b5,-11px -11px 24px #ffffff; 
+		padding: 4%;
+		column-count: 2;
+		column-gap: 30px;
+	}
+
+	.documentResume-div{
+		display: flex;
+    	flex-direction: column;
+	}
 
 /* Touch */
 
@@ -3214,6 +3257,8 @@ input, select, textarea {
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
 	background-image: linear-gradient(to right, #244869, #3b6668);
+	/* backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px ); */
 	cursor: pointer;
 	transition: all 0.3s;
 }
@@ -3252,24 +3297,39 @@ input, select, textarea {
 	height: auto;
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
 	.educskills-div {
 		flex-direction: row;
 	}
     .container {
         flex-direction: row; /* Align boxes horizontally for larger screens */
     }
+	.documentResume-div{
+		flex-direction: row;
+	}
 	.box{
 		width: 100%;
 		height: auto;
 		border-radius: 8px 8px 8px 8px;
 	}
 
+
 }
 @media screen and (max-width: 500px){
 	.aboutme-div{
 		padding: 6%;
 		padding-bottom: 2%;
+	}
+	.document-div{
+		columns: 1;
+	}
+	.modal{
+		width: 97%;
+		height: 97%;
+	}
+	.btn-github{
+		bottom: 4%;
+		right: 8%;
 	}
 }
 
@@ -3317,4 +3377,3 @@ input, select, textarea {
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
 	background-image: linear-gradient(to right, #244869, #3b6668);
 }
-
