@@ -60,7 +60,7 @@ image.forEach(item => {
                     
                     // GITHUB BUTON
                     modalBtnGithub.className= "btn-github";
-                    modalBtnGithub.href = "";
+                    modalBtnGithub.href = project.GitHub_link;
                     modalBtnGithub.target="_blank";
                     var iconElement = document.createElement("i");
                     iconElement.className = "fab fa-github github-icon";
