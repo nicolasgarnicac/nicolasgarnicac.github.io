@@ -3301,7 +3301,7 @@ input, select, textarea {
 	border-radius: 8px;
 	text-align: left;
 	/* border: 0.5px solid #b2cae0; */
-	animation: fadein-aboutme-div 2s ease-out forwards;
+	animation: fadein-aboutme-div 4s ease-out forwards;
 	/* background: linear-gradient(145deg, #ffffff, #e1e1e1); */
 
 }
@@ -3312,7 +3312,7 @@ input, select, textarea {
 	}
 	to {
 		opacity: 1;
-		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	}
 }
 
@@ -3494,7 +3494,7 @@ from {
 }
 to {
 	color: white;
-	text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
+	text-shadow: 1px 1px 8px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
 	background-image: linear-gradient(to right, #244869, #3b6668);
 	font-size: 1.15em;
 	/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
@@ -3519,7 +3519,7 @@ to {
 	to {
 		color: white;
 		font-size: 1.8em;
-		text-shadow: 1px 1px 6px rgb(248, 93, 93), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
+		text-shadow: 1px 1px 6px rgb(152, 45, 253), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
 
 	
 	}
