@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #ffffff !important;
 			text-decoration: none;
 		}
 
@@ -2864,7 +2864,9 @@ input, select, textarea {
 	.close-modal:hover{
 		font-size: 2em;
 		transition: 200ms;
-		color: #3eb08f;
+		color: #3b6668;
+		text-shadow: 2px 2px 4px #1d52b3;
+
 	}
 
 	.show{
@@ -2933,7 +2935,8 @@ input, select, textarea {
 		/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
     	/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
 		font-size: 0.95em;
-		text-shadow: 2px 2px 10px #1f1815;	
+		text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
+	
 	}
 
 	.document-div{
@@ -3297,17 +3300,19 @@ input, select, textarea {
 	/* color: #fff; */
 	border-radius: 8px;
 	text-align: left;
+	/* border: 0.5px solid #b2cae0; */
 	animation: fadein-aboutme-div 2s ease-out forwards;
+	/* background: linear-gradient(145deg, #ffffff, #e1e1e1); */
+
 }
 
 @keyframes fadein-aboutme-div {
 	from {
-		opacity: 0.3;
-
+		opacity: 0;
 	}
 	to {
 		opacity: 1;
-		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 	}
 }
 
@@ -3474,7 +3479,7 @@ input, select, textarea {
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
 	
 	animation: fadein-btn-view-resume-hover 0.2s ease-out forwards;
-	border: 2px solid #244869;
+	border: 1px solid #244869;
 
 
 }
@@ -3491,8 +3496,8 @@ to {
 	color: white;
 	text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
 	background-image: linear-gradient(to right, #244869, #3b6668);
-	font-size: 1.2em;
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699);
+	font-size: 1.15em;
+	/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
 
 }
 
@@ -3513,7 +3518,7 @@ to {
 	
 	}
 	to {
-		font-size: 1.6em;
+		font-size: 1.8em;
 		text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 2em rgb(4, 131, 124), 0 0 0.5em blue;
 	
 	}
