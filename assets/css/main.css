@@ -3507,7 +3507,6 @@ to {
 	font-weight: bold; 
 	color: #fdfdfd; 
 	font-size: 1.6em; 
-	text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
 	animation: fadein-title-myname 2s ease-out forwards;
 }
 
@@ -3518,8 +3517,9 @@ to {
 	
 	}
 	to {
+		color: white;
 		font-size: 1.8em;
-		text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
+		text-shadow: 1px 1px 5px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
 
 	
 	}
