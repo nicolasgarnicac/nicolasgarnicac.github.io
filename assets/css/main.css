@@ -3505,7 +3505,7 @@ to {
 
 .title-myname{
 	font-weight: bold; 
-	color: #fdfdfd; 
+	color: rgb(222, 255, 255); 
 	font-size: 1.6em; 
 	animation: fadein-title-myname 2s ease-out forwards;
 }
@@ -3517,9 +3517,9 @@ to {
 	
 	}
 	to {
-		color: white;
+		color: rgb(222, 255, 255);
 		font-size: 1.8em;
-		text-shadow: 1px 1px 6px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
+		text-shadow: 1px 1px 4px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
 
 	
 	}
