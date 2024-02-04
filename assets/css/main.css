@@ -2933,8 +2933,8 @@ input, select, textarea {
 	.btn-github:hover{
 		transform: scale(1.04);
 		/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
-		color: rgb(222, 255, 255);
-		text-shadow: 1px 1px 4px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
+		color: rgb(200, 253, 253);
+		text-shadow: 0px 0px 10px rgb(231, 211, 250);
 		background-image: linear-gradient(to right, #244869, #3b6668);
 		font-size: 1em;
 	
