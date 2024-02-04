@@ -2779,6 +2779,7 @@ input, select, textarea {
 		cursor: default;
 		animation: fadeIn-bg 0.4s ease-out forwards;
 		text-shadow: none;
+		color: #787878;
 
 	}
 	.modal{
@@ -2930,12 +2931,12 @@ input, select, textarea {
 	}
 
 	.btn-github:hover{
-		color: #fff;
-    	transform: scale(1.04);
+		transform: scale(1.04);
 		/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
-    	/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
-		font-size: 0.95em;
-		text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
+		color: rgb(222, 255, 255);
+		text-shadow: 1px 1px 4px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
+		background-image: linear-gradient(to right, #244869, #3b6668);
+		font-size: 1em;
 	
 	}
 
@@ -3301,7 +3302,7 @@ input, select, textarea {
 	border-radius: 8px;
 	text-align: left;
 	/* border: 0.5px solid #b2cae0; */
-	animation: fadein-aboutme-div 4s ease-out forwards;
+	animation: fadein-aboutme-div 2s ease-out forwards;
 	/* background: linear-gradient(145deg, #ffffff, #e1e1e1); */
 
 }
@@ -3345,7 +3346,12 @@ input, select, textarea {
 	-webkit-backdrop-filter: blur( 4px ); */
 	cursor: pointer;
 	animation: fadein-project-div 0.2s ease-out forwards;
-	border: 2px solid #244869;
+	border: 1px solid #244869;
+	/* text-shadow: 1px 1px 4px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue; */
+	color: rgb(222, 255, 255);
+	text-shadow: 0px 0px 10px rgb(231, 211, 250);
+
+
 }
 
 @keyframes fadein-project-div {
@@ -3355,7 +3361,6 @@ input, select, textarea {
 
 	}
 	to {
-		text-shadow: 3px 3px 10px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
 		background-image: linear-gradient(to right, #244869, #3b6668);
 		font-size: 1.02em;
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699);
@@ -3467,60 +3472,54 @@ input, select, textarea {
 	transition: all 0.3s;
 	border-radius: 8px;
 	color: #fefefe;
+	animation: fadein-btn-view-resume 1.5s ease-out forwards;
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
 	
+}
+
+@keyframes fadein-btn-view-resume {
+	from {
+		font-size: 0em;
+		width: 0px;
+	}
+	to {
+		width: 200px;
+		font-size: 1.2em;	
+	}
 }
 
 .view_resume_btn:hover
 {
-	color: #3b6668;
     transform: scale(1.03);
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
+    /* box-shadow: 5px 5px 10px rgba(228, 206, 248, 0.747);
 	
-	animation: fadein-btn-view-resume-hover 0.2s ease-out forwards;
-	border: 1px solid #244869;
-
-
-}
-
-
-
-@keyframes fadein-btn-view-resume-hover {
-from {
-	text-shadow: none;
-	background-image: none;
-
-}
-to {
-	color: white;
-	text-shadow: 1px 1px 8px rgb(245, 166, 166), 0 0 1em rgb(4, 131, 124), 0 0 0.2em blue;
+	border: 1px solid rgb(225, 196, 253); */
+	color: rgb(222, 255, 255);
+	text-shadow: 0px 0px 10px rgb(231, 211, 250);
 	background-image: linear-gradient(to right, #244869, #3b6668);
-	font-size: 1.15em;
-	/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699); */
+
 
 }
 
-}
 
 .title-myname{
 	font-weight: bold; 
 	color: rgb(222, 255, 255); 
 	font-size: 1.6em; 
-	animation: fadein-title-myname 2s ease-out forwards;
+	animation: fadein-title-myname 1s ease-out forwards;
 }
 
 @keyframes fadein-title-myname {
 	from {
 		font-size: 1em;
-		text-shadow: none;
+		text-shadow: 0px 0px 5px rgba(225, 196, 253, 0.747), 0 0 0.2em rgb(224, 240, 239), 0 0 0.2em blue;
 	
 	}
 	to {
 		color: rgb(222, 255, 255);
 		font-size: 1.8em;
-		text-shadow: 1px 1px 4px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue;
-
+		text-shadow: none;
 	
 	}
 }
