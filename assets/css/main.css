@@ -3365,13 +3365,13 @@ input, select, textarea {
 	to {
 		/* background-image: linear-gradient(to right, #244869, #3b6668); */
 		/* font-size: 1.02em; */
-		box-shadow: inset 15px 15px 20px rgb(28, 35, 44), inset -8px -8px 40px rgb(247, 235, 243);
+		box-shadow: inset 15px 15px 20px rgb(28, 35, 44), inset -8px -8px 40px rgba(247, 235, 243, 0.6);
 		/* border-top: 1px solid rgb(250, 197, 232);
         border-right: 1px solid  rgb(28, 35, 44);
         border-bottom: 1px solid rgb(28, 35, 44);
         border-left: 1px solid rgb(250, 197, 232); */
 		color: rgb(222, 255, 255);
-		text-shadow: 0px 0px 10px rgb(222, 255, 255);
+		text-shadow: 0px 0px 8px rgb(222, 255, 255);
 		font-size: 0.97em;
 		font-weight: 700;
 
