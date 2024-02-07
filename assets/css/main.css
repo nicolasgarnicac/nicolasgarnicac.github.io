@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			/* color: #ffffff !important; */
 			text-decoration: none;
 		}
 
@@ -2780,6 +2780,8 @@ input, select, textarea {
 		animation: fadeIn-bg 0.4s ease-out forwards;
 		text-shadow: none;
 		color: #787878;
+		font-weight: normal;
+
 
 	}
 	.modal{
@@ -2910,7 +2912,7 @@ input, select, textarea {
 		bottom: 8%; 
 		position: absolute;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-		font-size: 0.85em;
+		font-size: 1em;
 		border:  2px solid #244869;
 		background: linear-gradient(145deg, #244869, #3b6668);
 		animation: fadeIn-btn-github 0.6s ease-out forwards;
@@ -2931,12 +2933,15 @@ input, select, textarea {
 	}
 
 	.btn-github:hover{
-		transform: scale(1.04);
-		/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
-		color: rgb(200, 253, 253);
-		text-shadow: 0px 0px 10px rgb(231, 211, 250);
-		background-image: linear-gradient(to right, #244869, #3b6668);
-		font-size: 1em;
+		transform: scale(0.95);
+	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
+    /* box-shadow: 5px 5px 10px rgba(228, 206, 248, 0.747);
+	
+	border: 1px solid rgb(225, 196, 253); */
+	color: rgb(222, 255, 255);
+	text-shadow: 0px 0px 10px rgb(222, 255, 255);
+	background-image: linear-gradient(to right, #244869, #3b6668);
+	box-shadow: inset 10px 10px 20px rgb(28, 35, 44), inset -1px -1px 20px rgb(247, 235, 243);
 	
 	}
 
@@ -3207,7 +3212,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
+				padding: 2.25em 1.5em 3em 1.5em;
 			}
 
 				#main > section {
@@ -3319,51 +3324,56 @@ input, select, textarea {
 
 .project-div{
 	/* background-color: #3eb08f; */
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 8px ;
 	/* background-color: hsl(0, 7%, 97%); */
 	padding: 0%;
 	width: 100%; 
 	height: 120px;
 	background-size: cover;
-	
+
 	/* border: 1px solid #5cc6a7; */
 
 }
 
 .project-description-div{
+	
 	background-color: rgba(0, 0, 0, 0); 
 	width: 100%; 
 	height: 100%; 
 	border-radius: 5px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.658);
+
 
 }
 
 .project-description-div:hover
 {
-	
-	/* backdrop-filter: blur( 4px );
-	-webkit-backdrop-filter: blur( 4px ); */
+	background-color: rgba(0, 0, 0, 0.329); 
 	cursor: pointer;
 	animation: fadein-project-div 0.2s ease-out forwards;
-	border: 1px solid #244869;
 	/* text-shadow: 1px 1px 4px rgba(225, 196, 253, 0.747), 0 0 1em rgb(224, 240, 239), 0 0 0.2em blue; */
-	color: rgb(222, 255, 255);
-	text-shadow: 0px 0px 10px rgb(231, 211, 250);
-
-
 }
 
 @keyframes fadein-project-div {
 	from {
 		text-shadow: none;
 		background-image: none;
+		border: none;
+		box-shadow: inset 20px 20px 60px rgba(38, 48, 61, 0), inset -20px -20px 8rgba(201, 163, 188, 0);
 
 	}
 	to {
-		background-image: linear-gradient(to right, #244869, #3b6668);
-		font-size: 1.02em;
-		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699);
+		/* background-image: linear-gradient(to right, #244869, #3b6668); */
+		/* font-size: 1.02em; */
+		box-shadow: inset 15px 15px 20px rgb(28, 35, 44), inset -8px -8px 40px rgb(247, 235, 243);
+		/* border-top: 1px solid rgb(250, 197, 232);
+        border-right: 1px solid  rgb(28, 35, 44);
+        border-bottom: 1px solid rgb(28, 35, 44);
+        border-left: 1px solid rgb(250, 197, 232); */
+		color: rgb(222, 255, 255);
+		text-shadow: 0px 0px 10px rgb(222, 255, 255);
+		font-size: 0.97em;
+		font-weight: 700;
 
 	}
 	
@@ -3462,7 +3472,8 @@ input, select, textarea {
 }
 
 .view_resume_btn {
-	background-color: #3b6668;
+	/* background-color: #3b6668; */
+	background-image: linear-gradient(to right, #244869, #3b6668);
 	width: 200px;
 	height: 60px;
 	display: flex;
@@ -3490,16 +3501,15 @@ input, select, textarea {
 
 .view_resume_btn:hover
 {
-    transform: scale(1.03);
+    transform: scale(0.95);
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
     /* box-shadow: 5px 5px 10px rgba(228, 206, 248, 0.747);
 	
 	border: 1px solid rgb(225, 196, 253); */
 	color: rgb(222, 255, 255);
-	text-shadow: 0px 0px 10px rgb(231, 211, 250);
+	text-shadow: 0px 0px 10px rgb(222, 255, 255);
 	background-image: linear-gradient(to right, #244869, #3b6668);
-
-
+	box-shadow: inset 10px 10px 20px rgb(28, 35, 44), inset -1px -1px 20px rgb(247, 235, 243);
 }
 
 
@@ -3507,13 +3517,13 @@ input, select, textarea {
 	font-weight: bold; 
 	color: rgb(222, 255, 255); 
 	font-size: 1.6em; 
-	animation: fadein-title-myname 1s ease-out forwards;
+	animation: fadein-title-myname 1.5s ease-in-out forwards;
 }
 
 @keyframes fadein-title-myname {
 	from {
 		font-size: 1em;
-		text-shadow: 0px 0px 5px rgba(225, 196, 253, 0.747), 0 0 0.2em rgb(224, 240, 239), 0 0 0.2em blue;
+		/* text-shadow: 0px 0px 5px rgba(225, 196, 253, 0.747), 0 0 0.2em rgb(224, 240, 239), 0 0 0.2em blue; */
 	
 	}
 	to {
