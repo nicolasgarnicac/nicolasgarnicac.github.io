@@ -3485,6 +3485,8 @@ input, select, textarea {
 	color: #fefefe;
 	animation: fadein-btn-view-resume 1.5s ease-out forwards;
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.637);
+
 	
 }
 
@@ -3501,7 +3503,7 @@ input, select, textarea {
 
 .view_resume_btn:hover
 {
-    transform: scale(0.95);
+    transform: scale(0.98);
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
     /* box-shadow: 5px 5px 10px rgba(228, 206, 248, 0.747);
 	
