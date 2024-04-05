@@ -2946,10 +2946,10 @@ input, select, textarea {
 	}
 
 	.document-div{
-		border-radius: 10px;
-        background: linear-gradient(145deg, #ffffff, #e6e6e6);
-        box-shadow:  11px 11px 24px #b5b5b5,-11px -11px 24px #ffffff; 
-		padding: 4%;
+		/* border-radius: 10px;
+        background: linear-gradient(145deg, #ffffff, #ffffff);
+        box-shadow:  11px 11px 24px #b5b5b5,-11px -11px 24px #ffffff;  */
+		padding: 3%;
 		column-count: 2;
 		column-gap: 30px;
 	}
