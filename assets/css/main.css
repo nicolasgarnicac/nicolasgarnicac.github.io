@@ -3535,3 +3535,27 @@ input, select, textarea {
 	
 	}
 }
+
+.tags{
+	background-color: #fff; 
+	border-radius: 10px; 
+	padding-left: 2%; 
+	padding-right:2%;
+	font-weight: bold; 
+	display: inline-block;
+	font-size: 0.8em;
+	line-height: 130%;
+}
+
+.tags.python {
+	color: #9b8f25;
+}
+.tags.tensorflow {
+	color: #da7c12;
+}
+.tags.flask {
+	color: #363635;
+}
+.tags.docker {
+	color: #344bb1;
+}
