@@ -1,146 +1,74 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="assets/css/prism.css" rel="stylesheet" />
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-between;
+                gap: 50px;
+            }
+            .left-column {
+                width: 50%;
+            }
+            .right-column {
+                width: 50%;
+            }
+            .codeDiv {
+                background-color: #f4f4f4;
+                padding: 10px;
+                border-radius: 5px;
+                overflow-x: auto;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 10px auto;
+            }
+        </style>
     </head>
-
     <body>
-       <div style="padding-left: 0%; padding-right: 2%; padding-bottom: 8%;">
-        <!-- <div class="documentResume-div" style="padding: 0; width: 100%;">
-            <div class="box"
-                style="background-image: linear-gradient(to left, #2c5780, #46787a, #a77684); box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); border: none;">
-            </div>
-            
-            <div class="box"
-                style="background-color: hsla(0, 7%, 97%, 0); border-color: hsla(0, 7%, 97%, 0);">
-            </div>
-        </div> -->
-        
-        <div style="padding: 0;"><div class= document-div>
-            <div style="background-color: #3b6668; padding: 3%; color: aliceblue; border-radius: 7px; align-items: center;">
-                <p>In this project, I built a custom CNN model that classifies human x-ray chest images. The model differentiates between viral pneumonia, bacterial pneumonia, and normal (healthy). 
-                   The model is embedded in a web app which provides a simple UI and it is deployed inside a docker container.
-                <br>
-                <br>
-                Technologies used: 
-                <div style="display: block;">
-                <div class="tags python">Python</div>
-                <div class="tags tensorflow">Tensorflow</div>
-                <div class="tags flask">Flask</div>
-                <div class="tags docker">Docker</div>
-
-            </div>
-            </div>
-            <br>
+        <div class="container">
+            <!-- Left Column -->
+            <div class="left-column">
                 <h4 style="color: #3b6668">Introduction</h4>
+                <p>Pneumonia is commonly diagnosed through symptoms such as cough, fever, and x-ray imaging. The congestion of the bronchi and alveoli leads to high-intensity zones in the image, aiding diagnosis.</p>
                 
-<p>Evaluation and diagnosis of the disease are
-always important parts of the treatment pipeline. Pneumonia is
-commonly diagnosed with respect to the patient's symptoms, such as
-cough, fever, general weakness, and difficulty breathing (choking),
-and x-ray images taken from the patient. As shown in the picture
-below, the congestion of the bronchi and alveoli will cause a higher
-intensity zone when taking an x-ray image from an infected patient,
-which helps to diagnose the pneumonia.</p>
-<p align="center">
-    <img style="width: 50%; height: auto;"
-        src="/Projects/Chest X-Ray Pneumonia Classification/pneumonia_example.jpg">
-</p>
-<p>The treatment for pneumonia will depend on the origin of the
-pathogen, and to determine the origin, the doctor will request a
-tissue sample or mucus sample from the lungs in order to make a
-bacteria culture or a viral detection. This process takes some time
-and is uncomfortable for the patient. Determining the kind of
-pathogen is essential because if it is bacteria, it could be treated
-with antibiotics, which would not work with virus infections.</p>
-
-<br>
-
-                <h4 style="color: #3b6668">The dataset</h4>
-                <p>The original dataset can be found in:
-                    https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia.
-                    It contains 3 classes divided by folders (train, test, val):</p>
-                
+                <h4 style="color: #3b6668">The Dataset</h4>
+                <p>The dataset comes from <a href="https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia">Kaggle</a>. It contains three classes:</p>
                 <ul>
-                    <li style="font-size: 0.8em;">Virus pneumonia</li>
-                
-                    <li style="font-size: 0.8em;">Bacteria pneumonia</li>
-                
-                    <li style="font-size: 0.8em;">Normal (No pneumonia)</li>
+                    <li>Virus pneumonia</li>
+                    <li>Bacteria pneumonia</li>
+                    <li>Normal (No pneumonia)</li>
                 </ul>
                 
-                <p>I downloaded the dataset and merged all the
-                    folders into one unique folder in order to split the dataset in a
-                    random way into train, val and test folders. Then I uploaded the
-                    folder into my personal Onedrive for later image analysis.</p>
-                <br>
-
-
-                <h4 style="color: #3b6668">Model & training</h4>
-
+                <h4 style="color: #3b6668">Model and training performance</h4>
+                <p>The model is a convolutional neural network trained on x-ray images to classify pneumonia types.</p>
+                <img src="/Projects/Chest X-Ray Pneumonia Classification/pneumonia_example.jpg" alt="X-ray Example">
                 <div class="codeDiv">
-                    <pre><code class="` language-`" style="font-size: 13px;">
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
+                    <pre><code> Layer (type)                Output Shape              Param #   
 =================================================================
  input_1 (InputLayer)        [(None, 64, 64, 1)]       0
-
- conv2d (Conv2D)             (None, 64, 64, 32)        320       
-
- batch_normalization (BatchN  (None, 64, 64, 32)       128
- ormalization)
-
- max_pooling2d (MaxPooling2D  (None, 32, 32, 32)       0
- )
-
-
+ conv2d (Conv2D)             (None, 64, 64, 32)        320 
+ batch_normalization         (None, 64, 64, 32)       128
+ max_pooling2d              (None, 32, 32, 32)       0
  dropout_1 (Dropout)         (None, 256)               0
-
  dense_2 (Dense)             (None, 3)                 771
-
 =================================================================
 Total params: 8,746,371
-Trainable params: 8,745,923
-Non-trainable params: 448
-_________________________________________________________________
                     </code></pre>
                 </div>
+            </div>
 
-                <p align="center">
-                    <img style="width: 90%; height: auto;"
-                        src="/Projects/Chest X-Ray Pneumonia Classification/Model_training performance.jpeg">
-                </p>
+            <!-- Right Column -->
+            <div class="right-column">
+                
+                <img src="/Projects/Chest X-Ray Pneumonia Classification/Model_training performance.jpeg" alt="Training Performance">
                 <h4 style="color: #3b6668">Testing</h4>
-                <p align="center">
-                    <img style="width: 90%; height: auto;"
-                        src="/Projects/Chest X-Ray Pneumonia Classification/Test performance.jpg">
-                </p>                
-                
-
-                <br><div class="codeDiv">
-                    <pre><code class="` language-`" style="font-size: 13px;">
-            precision   recall  f1-score   supp
-Normal      0.96      0.90      0.93       243
-Virus       0.67      0.74      0.70       218
-Bacteria    0.74      0.71      0.72       211
-  
-accuracy                            0.79       672
-macro avg       0.79      0.78      0.78       672
-weighted avg    0.79      0.79      0.79       672
-  
-21/21 [==============================] - 1s 29ms/step - loss: 0.6556 - accuracy: 0.7857
-Loss of the model is -  0.6555891633033752
-21/21 [==============================] - 1s 27ms/step - loss: 0.6556 - accuracy: 0.7857
-Accuracy of the model is -  78.571 %
-                    </code></pre>
-                </div>
-                <br>
-                
-                
+                <img src="/Projects/Chest X-Ray Pneumonia Classification/Test performance.jpg" alt="Test Performance">
+            </div>
         </div>
-    </div>
     </body>
-
 </html>
