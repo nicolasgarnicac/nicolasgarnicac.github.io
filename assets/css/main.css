@@ -2640,7 +2640,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #2a3e45;
+		background-color: #0c2727;
 		background-attachment: scroll, scroll;
 		/* background-image: url("../../images/Sin título.jpg"); */
 		background-position: top left, top left;
@@ -3093,7 +3093,7 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #2a3e45;
+				background-color: #0c2727;
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3300,7 +3300,7 @@ input, select, textarea {
 	padding-bottom: 0%;
 	padding-left: 2%;
 	padding-right: 2%;
-	border: 1px solid #3b6668;
+	border: 1px solid #0c2727;
 	
 	/* color: #fff; */
 	border-radius: 5px;
@@ -3330,7 +3330,7 @@ input, select, textarea {
 	width: 100%; 
 	height: 90px;
 	background-size: cover;
-	border: 1px solid #3b6668;
+	border: 1px solid #0c2727;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -3347,7 +3347,7 @@ input, select, textarea {
 }
 
 .project-name{
-	color: #c6fdf6; 
+	color: #aff0f6; 
 	background-color: rgba(0, 0, 0, 0.4); 
 	padding: 4%; 
 	border-radius: 5px;
@@ -3374,7 +3374,7 @@ input, select, textarea {
 	background-color: #fafafa;
 	padding: 4%;
 	padding-bottom: 0.1%;
-	border: 1px solid #3b6668;
+	border: 1px solid #0c2727;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	/* color: #fff; */
 	border-radius: 8px;
@@ -3460,7 +3460,7 @@ input, select, textarea {
 
 .view_resume_btn {
 	/* background-color: #3b6668; */
-	background-image: linear-gradient(to right, #244869, #3b6668);
+	background-image: linear-gradient(to bottom, #0c2727, #386377);
 	width: auto;
 	height: auto;
 	display: flex;
@@ -3468,19 +3468,24 @@ input, select, textarea {
 	align-items: center;
 	cursor: pointer;
 	transition: all 0.3s;
+	border-top: 2px solid #74bac0;
+  	border-right: 2px solid #0c2727;
+  	border-bottom: 2px solid #0c2727;
+  	border-left: 2px solid #74bac0;
 	border-radius: 5px;
-	color: rgb(222, 255, 255);
+	color: #aff0f6;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
+
 	/* animation: fadein-btn-view-resume 1.5s ease-out forwards; */
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
 	/* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.637); */
 
 	color: rgb(222, 255, 255);
 	text-shadow: 0px 0px 10px rgb(222, 255, 255);
-	box-shadow: inset 2px 2px 8px rgb(247, 235, 243), inset -7px -7px 8px rgb(28, 35, 44);
+	box-shadow: inset 2px 2px 8px rgb(247, 235, 243), inset -7px -7px 8px rgba(28, 35, 44, 0.616);
 }
 
 @keyframes fadein-btn-view-resume {
@@ -3502,14 +3507,14 @@ input, select, textarea {
 	
 	border: 1px solid rgb(225, 196, 253); */
 	color: rgb(222, 255, 255);
-	background-image: linear-gradient(to right, #244869, #3b6668);
-	box-shadow: inset 7px 7px 8px rgb(28, 35, 44), inset -7px -7px 8px rgb(28, 35, 44);
+	background-image: linear-gradient(to right, #0c2727, #0c2727);
+	box-shadow: inset 7px 7px 8px rgba(28, 35, 44, 0), inset -7px -7px 8px rgba(28, 35, 44, 0);
 }
 
 
 .title-myname{
 	font-weight: bold; 
-	color: rgb(222, 255, 255); 
+	color: #aff0f6; 
 	font-size: 1.6em; 
 	animation: fadein-title-myname 1.5s ease-in-out forwards;
 }
@@ -3521,7 +3526,7 @@ input, select, textarea {
 	
 	}
 	to {
-		color: rgb(222, 255, 255);
+		color: #aff0f6;
 		font-size: 1.8em;
 		text-shadow: none;
 	
