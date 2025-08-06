@@ -3358,7 +3358,7 @@ input, select, textarea {
 }
 
 .project-description-div:hover{
-	background: rgba(38, 95, 128, 0.308); /* Semi-transparent white */
+	background: rgba(18, 35, 46, 0.692); /* Semi-transparent white */
 	backdrop-filter: blur(10px); /* Apply blur effect to background */
 	-webkit-backdrop-filter: blur(10px); /* Safari support */
 	cursor: pointer;
