@@ -3458,9 +3458,16 @@ input, select, textarea {
     font-size: 16px; /* Set the font size for descriptions */
 }
 
+
+/* The gradient border container */
+.button-wrapper {
+  display: inline-block;
+  border-radius: 5px; /* your desired radius */
+}
+
 .view_resume_btn {
 	/* background-color: #3b6668; */
-	background-image: linear-gradient(to bottom, #0c2727, #386377);
+	background-image: linear-gradient(to top, #0c2727, #386377);
 	width: auto;
 	height: auto;
 	display: flex;
@@ -3468,24 +3475,25 @@ input, select, textarea {
 	align-items: center;
 	cursor: pointer;
 	transition: all 0.3s;
-	border-top: 2px solid #74bac0;
-  	border-right: 2px solid #0c2727;
-  	border-bottom: 2px solid #0c2727;
-  	border-left: 2px solid #74bac0;
-	border-radius: 5px;
-	color: #aff0f6;
+	color: #ddfcff;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	border-top: 1px solid #ffc4c4;
+	border-bottom: 1px solid #bd5a0a; /* Required for border-image */
+  	/* border-radius: 999px; Pill shape */
+  	cursor: pointer;
+	/* border-radius: 5px; */
+
 
 	/* animation: fadein-btn-view-resume 1.5s ease-out forwards; */
 	/* background-image: linear-gradient(to right, #386288, #70a7a4 ,#af818e); */
 	/* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.637); */
-
-	color: rgb(222, 255, 255);
-	text-shadow: 0px 0px 10px rgb(222, 255, 255);
-	box-shadow: inset 2px 2px 8px rgb(247, 235, 243), inset -7px -7px 8px rgba(28, 35, 44, 0.616);
+	/* text-shadow: 0px 0px 10px rgb(222, 255, 255); */
+	box-shadow: inset 2px 4px 10px #aff0f6e1, inset -4px -5px 10px #225eb8;
+	z-index: 0;
+	border-radius: 5px;
 }
 
 @keyframes fadein-btn-view-resume {
@@ -3509,6 +3517,7 @@ input, select, textarea {
 	color: rgb(222, 255, 255);
 	background-image: linear-gradient(to right, #0c2727, #0c2727);
 	box-shadow: inset 7px 7px 8px rgba(28, 35, 44, 0), inset -7px -7px 8px rgba(28, 35, 44, 0);
+
 }
 
 
@@ -3604,3 +3613,4 @@ input, select, textarea {
     border: none;
     overflow-y: auto;
   }
+  
