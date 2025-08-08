@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<title>Nicolas Garnica - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="is-preload" style="background-color: #d2d7e0;">
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<h1 class="title-myname"style="font-weight: bold; font-size: 1.6em;">Nicolas Garnica</h1>
+				<h4>
+					<p style="color: #dcfffada; font-size: 0.7em; line-height: 1.2;">BEng. Biomedical Engineering
+						<br>University of Los Andes (Bogota, Colombia)
+					</p>
+				</h4>
+
+			</div>
+		</header>
+		<!-- Main -->
+		<div id="main" style="background-color: #d2d7e0;">
+			<!-- ABOUT ME -->
+			<section id="one">
+				<!-- <header>
+					<h2 style="color: #0c1e27; padding-top: 10px;">About me</h2>
+				</header> -->
+				<div class="aboutme-div">
+					<p style="font-size: 1em; color: hsl(0, 0%, 29%); line-height: 1.2; text-align: left;">
+						<br><b style="font-weight: bolder; color: #0c1e27;">Welcome to my portfolio!</b>
+						Here I want to showcase my skills in the field of computer science and
+						software engineering applied to healthcare and bioinformatics with a
+						special focus in <b style="font-weight: bolder; color: #0c1e27;">genomics</b>, 
+						<b style="font-weight: bolder; color: #0c1e27;">transcriptomics</b> and 
+						<b style="font-weight: bolder; color: #0c1e27;">image analysis (computer vision)</b>.
+						<br>
+
+					</p>
+
+					<ul class="actions">
+						<li><a id="7" class="view_resume_btn">View resume</a></li>
+					</ul>
+				</div>
+			</section>
+
+<!-- SKILLS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<!-- <section>
+				<header>
+					<h2 style="color: #0c1e27;">Education & skills</h2>
+				</header>
+				<div class="educskills-div">
+
+					<div div class="box"
+						style="border: 0px solid #5cc6a7; background-color: #fefefe; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); width: 100%; border-radius: 8px 0 0 8px;">
+						<div>
+							<div class="icon">
+								<img src="images\Icons\python-svgrepo-com.png" alt="Icon 2">
+								<p style="color: hsl(0, 0%, 29%);line-height: 1.2; font-size: 0.9em"> <b
+										style="font-weight: bold;">Python 3</b> - libraries: NumPy,
+									Matplotlib, Scikit-Learn, Scikit-Image, Seaborn, OpenCV, Statsmodels,
+									Scipy, Pandas</p>
+							</div>
+							<div class="icon">
+								<img src="images\Icons\tensorflow-svgrepo-com.png" alt="Icon 1">
+								<p style="color: hsl(0, 0%, 29%);line-height: 1.2;font-size: 0.9em">Tensorflow
+									2</p>
+							</div>
+							<div class="icon">
+								<img src="images\Icons\pytorch-svgrepo-com.png" alt="Icon 3 ">
+								<p style="color: hsl(0, 0%, 29%);line-height: 1.2; font-size: 0.9em">PyTorch
+									2</p>
+							</div>
+							<div class="icon" style="margin-right: 5px;">
+								<img src="images\Icons\github.png" alt="Icon 1">
+								<p style="color: hsl(0, 0%, 29%);line-height: 1.2;font-size: 0.9em">Version
+									control with
+									GitHub </p>
+							</div>
+							<div class="icon">
+								<img src="images\Icons\docker-svgrepo-com.png" alt="Icon 1">
+								<p style="color: hsl(0, 0%, 29%);line-height: 1.2;font-size: 0.9em">Docker
+									for app
+									deployment</p>
+							</div>
+							<div class="icon">
+								<img src="images\Icons\anaconda-svgrepo-com.png" alt="Icon 1">
+								<p style="color: hsl(0, 0%, 29%);line-height: 1.2;font-size: 0.9em">Anaconda
+									and
+									Miniconda for package and enviroment management </p>
+							</div>
+						</div>
+						<p
+							style="font-size: 0.9em; color: hsl(0, 0%, 29%);line-height: 1.4; margin-top: 5%;">Hands-On
+							experience with <b style="font-weight: bold;">HTML</b>
+							and <b style="font-weight: bold;">CSS</b>, C++ for Arduino programming,
+							<b style="font-weight: bold;">R</b>
+							for statistical analysis (ANOVA, factorial analysis and confidence
+							intervals) and bioinformatics, and <b style="font-weight: bold;">Linux</b>
+							commands.
+						</p>
+					</div>
+
+					<div class="box"
+						style="border: 0px solid #5cc6a7;background-image: linear-gradient(to right, #244869, #0c1e27); border-radius: 0 8px 8px 0; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); flex: 1;justify-content: space-between;">
+						<div>
+							<div class="icon" style="align-items:start;">
+								<img src="images\Icons\graduacion.png" alt="Icon 2"
+									style="height: 43px;width: 37px; padding-top: 8px;">
+								<p style="color: #fefefe;line-height: 1.7;font-size: 0.9em"> <b
+										style="font-weight: bold; color: #c6fdf6;">BEng.
+										Biomedical Engineering</b>
+									<br><b style="font-weight: bold; color: #fefefe;">University of Los Andes</b>
+									- Colombia
+									<br><a
+										href="https://1drv.ms/b/s!Aocxj1Hi_hVIldtqW98qNS-CDe857g?e=9f9FlH"
+										target="_blank">View Diploma</a>
+
+								</p>
+							</div>
+							<div class="icon" style="align-items: center; padding-top:15px;">
+								<p style="color: #fefefe;line-height: 1.7;font-size: 0.9em"> <b
+										style="font-weight: bold; color: #c6fdf6;">Udemy
+										Certificates:</b>
+									<br>-Deep Learning: Convolutional Neural Networks (CNN) in Python
+									<br><a
+										href="https://www.udemy.com/certificate/UC-35b38d2d-4667-4a9f-b091-0b54a4fcceea/"
+										target="_blank">View Certificate</a>
+									<br>-Deep Learning: Recurrent Neural Networks (RNN) in Python
+									<br><a
+										href="https://www.udemy.com/certificate/UC-3dd35c92-9ecd-4d26-845c-2adaa99a2cdb/"
+										target="_blank">View Certificate</a>
+
+								</p> </div>
+							<div class="icon" style="align-items: center; padding-top: 20px;">
+								<img src="images\Icons\coursera-svgrepo-com (2).png" alt="Icon 3 "
+									style="width: 30px; height: 30px;">
+								<p style="color: #fefefe;line-height: 1.7;font-size: 0.9em"> <b
+										style="font-weight: bold; color: #c6fdf6;">Genomic
+										Data Science Specialization</b>
+									<br><b style="font-weight: bold;color: #fefefe;">Johns Hopkins
+										University</b> + Coursera
+									<br>(Currently)
+								</p> </div>
+
+						</div>
+					</div>
+
+				</div>
+			</section> -->
+
+			<!-- PROJECTS--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+			<section id="three">
+				<header>
+					<h2 style="color: #0c1e27;">Projects</h2>
+				</header>
+				
+				<div class="row">
+
+					<!--Project 1-->
+					<article class="col-6 col-12-xsmall work-item">
+						<div class="project-div" style="background-image: url(images/thumbs/01.jpg);">
+							<div class="project-description-div" id="1" data-url="Projects/Bone Marrow Cell Classification/bone_marrow_cell_classification.html">
+								<p class="project-name">Chest X-Ray Image Classification</p>
+							</div>
+						</div>
+					</article>
+
+					<!--Project 2-->
+					<article class="col-6 col-12-xsmall work-item">
+						<div class="project-div" style="background-image: url(images/thumbs/02.jpg);">
+							<div class="project-description-div" id="2">
+								<p class="project-name">Chest X-Ray Image Classification</p>
+							</div>
+						</div>
+					</article>
+
+					<!--Project 3-->
+					<article class="col-6 col-12-xsmall work-item">
+						<div class="project-div" style="background-image: url(images/thumbs/03.jpg);">
+						
+							<div class="project-description-div" id="3">
+								<p class="project-name">Chest X-Ray Image Classification</p>
+							</div>
+						</div>
+					</article>
+
+					<!--Project 4-->
+					<article class="col-6 col-12-xsmall work-item">
+						<div class="project-div" style="background-image: url(images/thumbs/04.jpg);">
+						
+							<div class="project-description-div" id="4">
+								<p class="project-name">Chest X-Ray Image Classification</p>
+							</div>
+						</div>
+					</article>
+
+					<!--Project 5-->
+					<article class="col-6 col-12-xsmall work-item">
+						<div class="project-div" style="background-image: url(images/thumbs/05.jpg);">
+						
+							<div class="project-description-div" id="5">
+								<p class="project-name">Chest X-Ray Image Classification</p>
+							</div>
+						</div>
+					</article>
+
+					<!--Project 6-->
+					<article class="col-6 col-12-xsmall work-item">
+						<div class="project-div" style="background-image: url(images/thumbs/06.jpg);">
+						
+							<div class="project-description-div" id="6">
+								<p class="project-name">Chest X-Ray Image Classification</p>
+							</div>
+						</div>
+					</article>
+
+  				<!-- POP-UP -->
+  					<div id="popup" class="popup">
+  					  <div class="popup-content">
+  					    <span id="close-popup" class="close-button">&times;</span>
+						  <!-- <iframe src="Projects/Bone Marrow Cell Classification/bone_marrow_cell_classification.html" frameborder="0"></iframe> -->
+						  <iframe id="popup-iframe" src="" frameborder="0"></iframe>
+  					  </div>
+  					</div>
+				</section>
+
+				<!-- GET IN TOUCH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+				<section id="three">
+					<h2 style="color: #0c1e27;">Get In Touch</h2>
+					<div class="getintouch-div">
+						<p style="color:  hsl(0, 0%, 29%); font-size: 1em; line-height: 1.2;">I would be happy to connect with you on
+							LinkedIn or through e-mail for any discussions regarding mine or your
+							projects. all <b style="font-weight: bold; color: #0c1e27; line-height: 1.2;">feedback</b>
+							is welcome!</p>
+						<div class="col-8 col-12-small">
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall"><input type="text" name="name"
+											id="name" placeholder="Name"
+											style="background-color: #d2d7e0; box-shadow: inset 2px 2px 8px #1d3457b0, inset -4px -5px 20px #cbe0ff56; color: hsl(0, 0%, 29%);" /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="email"
+											id="email"
+											placeholder="Email" style="background-color: #d2d7e0; box-shadow: inset 2px 2px 8px #1d3457b0, inset -4px -5px 20px #cbe0ff56; color: hsl(0, 0%, 29%)" /></div>
+									<div class="col-12"><textarea name="message" id="message"
+											placeholder="Message" rows="4"
+											style="background-color: #d2d7e0; box-shadow: inset 2px 2px 8px #1d3457b0, inset -4px -5px 20px #cbe0ff56; color: hsl(0, 0%, 29%);"></textarea></div>
+								</div>
+							</form>
+							<ul class="actions">
+								<li><a class="view_resume_btn">Send message</a></li>
+							</ul>
+						</div>
+						<!-- <div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-map-pin"><span class="label">Address</span></h3>
+										Toronto, ON<br />
+										Canada
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										+1 4372552143
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">p.nicolasgarnica@outlook.com</a>
+									</li>
+								</ul>
+							</div> -->
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/nicolas-garnica-6560241b7"
+									class="icon brands fa-linkedin"
+									target="_blank" style="color: #aff0f6; font-size: x-large;"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/nicolasgarnicac"
+									class="icon brands fa-github" target="_blank"
+									style="color: #aff0f6; font-size: x-large;"><span class="label">Github</span></a></li>
+							<!-- <li><a href="#" class="icon solid fa-envelope" style="color: #c6fdf6c5"><span
+										class="label">Email</span></a></li>
+							<li><a href="#" class="icon solid fa-phone" style="color: #c6fdf6c5"><span
+										class="label">phone</span></a></li> -->
+						</ul>
+						<ul class="copyright">
+							<li style="color: #dcfffada">+1 6478072190</li>
+							<li style="color: #dcfffada">Toronto, ON.</li>
+						</ul>
+						<ul class="copyright">
+							<li style="color: #dcfffada">nicolas.grnca@gmail.com </li>
+						</ul>
+
+					</div>
+				</footer>
+
+				<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script type="module" src="assets/js/modal.js"></script>
+				<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+				<script src="assets/js/popup_script.js"></script>
+
+
+			</body>
+
+		</html>
