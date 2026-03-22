@@ -3301,7 +3301,7 @@ input, select, textarea {
   
 .aboutme-div{
 	width: 100%;
-	background-image: linear-gradient(135deg, #6b647a38, #0000001e);
+	background-image: linear-gradient(135deg, #6b647a1c, #00000041);
 	/* background-color: #d2d7e0; */
 	padding-top: 0%;
 	padding-bottom: 0%;
@@ -3374,7 +3374,7 @@ input, select, textarea {
 }
 
 .project-description-div:hover{
-	background: rgba(18, 35, 46, 0.692); /* Semi-transparent white */
+	background: #4a455c81; /* Semi-transparent white */
 	backdrop-filter: blur(10px); /* Apply blur effect to background */
 	-webkit-backdrop-filter: blur(10px); /* Safari support */
 	cursor: pointer;
@@ -3383,7 +3383,7 @@ input, select, textarea {
 
 .getintouch-div{
 	width: 100%;
-	background-image: linear-gradient(135deg, #6b647a38, #0000001e);
+	background-image: linear-gradient(135deg, #6b647a1c, #00000041);
 	/* background-color: #d2d7e0; */
 	padding: 4%;
 	padding-bottom: 0.1%;
@@ -3482,7 +3482,7 @@ input, select, textarea {
 
 .view_resume_btn {
 	/* background-color: #3b6668; */
-	background-image: linear-gradient(135deg, rgb(26, 51, 66),#1b181f,#2e231994);
+	background-image: linear-gradient(135deg, #11232f,#1b181f,#2e231994);
 	width: 12em;
 	height: 3em;
 	display: flex;
@@ -3496,7 +3496,9 @@ input, select, textarea {
 	padding-right: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	border: 1px solid rgba(139, 139, 139, 0.123);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.068);
+	border-right: 1px solid rgba(255, 255, 255, 0.068);
+
   	/* border-radius: 999px; Pill shape */
   	cursor: pointer;
 	/* border-radius: 5px; */
@@ -3530,7 +3532,7 @@ input, select, textarea {
 	
 	border: 1px solid rgb(225, 196, 253); */
 	color: rgb(222, 255, 255);
-	background-image: linear-gradient(to right, #0c1e27, #0c1e27);
+	background-image: linear-gradient(to right, #33303d, #33303d);
 	box-shadow: inset 7px 7px 8px rgba(28, 35, 44, 0), inset -7px -7px 8px rgba(28, 35, 44, 0);
 	text-shadow: 0 0 0px #effcf900;
 
