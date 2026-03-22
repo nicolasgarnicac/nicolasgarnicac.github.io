@@ -338,8 +338,8 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
-		padding: '5px';
-		overflow: auto;
+		padding: 0%;
+		/* overflow: auto; */
 	}
 
 		.row > * {
@@ -2604,6 +2604,7 @@ input, select, textarea {
 
 	.work-item {
 		margin: 0 0 2em 0;
+		padding-bottom: 5%;
 	}
 
 		.work-item .image {
@@ -2646,7 +2647,6 @@ input, select, textarea {
 		background-position: top left, top left;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 150%;
-		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
 		padding: 8em 4em;
@@ -2655,7 +2655,7 @@ input, select, textarea {
 		top: 0;
 		width: 35%;
 		/* border: 1px solid rgba(255, 255, 255, 0.034); */
-  		/* box-shadow: 0 4px 20px rgb(0, 0, 0); */
+  		box-shadow: 0 1px 30px rgba(0, 0, 0, 0.473);
 	}
 
 		#header > * {
@@ -2740,7 +2740,7 @@ input, select, textarea {
 
 	#main {
 		margin-left: 35%;
-		max-width: 54em;
+		max-width: 57%;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
@@ -3175,6 +3175,7 @@ input, select, textarea {
 			#projects {
 				width:100%;
 				height:600px;
+				padding-bottom: 10%;
 			}
 			/* .image.thumb::before{
 				display: none;
@@ -3262,6 +3263,9 @@ input, select, textarea {
 		.image.thumb::after{
 			display: none;
 		} */
+		 .work-item{
+			padding-bottom: 15%;
+		 }
 		.image.thumb:hover:before, .image.thumb:active {
 			background: url("images/overlay.png");
 			opacity: 1.0;
@@ -3306,8 +3310,8 @@ input, select, textarea {
 	/* border: 1px solid #d2d7e0; */
 	border: 1px solid rgba(255, 255, 255, 0.075);
   	backdrop-filter: blur(30px);
-  	box-shadow: 0 4px 30px rgb(0, 0, 0);
-	
+  	box-shadow: 0 4px 10px rgb(0, 0, 0);
+
 	/* color: #fff; */
 	border-radius: 10px;
 	text-align: left;
@@ -3317,7 +3321,7 @@ input, select, textarea {
 	/* box-shadow: -6px -6px 15px rgba(255, 255, 255, 0.575), 6px 6px 15px #1d345756; */
 }
 
-@keyframes fadein-aboutme-div {
+/* @keyframes fadein-aboutme-div {
 	from {
 		opacity: 0;
 	}
@@ -3325,7 +3329,7 @@ input, select, textarea {
 		opacity: 1;
 		box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 	}
-}
+} */
 
 .project-div{
 	/* background-color: #3eb08f; */
@@ -3333,7 +3337,7 @@ input, select, textarea {
 	/* background-color: hsl(0, 7%, 97%); */
 	padding: 0%;
 	width: 100%; 
-	height: 90px;
+	height: 230%;
 	background-size: cover;
   	box-shadow: 0 4px 30px rgb(0, 0, 0);
 
@@ -3359,7 +3363,10 @@ input, select, textarea {
 .project-name{
 	color: #aff0f6; 
 	background-color: rgba(0, 0, 0, 0.4); 
-	padding: 4%; 
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
 	border-radius: 10px;
 	background: rgba(0, 0, 0, 0.329); /* Semi-transparent white */
   	backdrop-filter: blur(10px); /* Apply blur effect to background */
@@ -3382,10 +3389,9 @@ input, select, textarea {
 	padding-bottom: 0.1%;
 	/* color: #fff; */
 	border: 1px solid rgba(255, 255, 255, 0.075);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.075);
   	backdrop-filter: blur(30px);
-  	box-shadow: 0 4px 30px rgb(0, 0, 0);
-	
-	/* color: #fff; */
+  	box-shadow: 0 4px 30px rgb(0, 0, 0);	
 	border-radius: 10px;
 }
 
@@ -3477,14 +3483,14 @@ input, select, textarea {
 .view_resume_btn {
 	/* background-color: #3b6668; */
 	background-image: linear-gradient(135deg, rgb(26, 51, 66),#1b181f,#2e231994);
-	width: auto;
-	height: auto;
+	width: 12em;
+	height: 3em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 	transition: all 0.3s;
-	color: #8de3d6;
+	color: #aff0f6;
 	/* text-shadow: 0 0 20px #ffffffde; */
 	padding-left: 20px;
 	padding-right: 20px;
@@ -3534,19 +3540,18 @@ input, select, textarea {
 
 .title-myname{
 	font-weight: bold; 
-	color: #72ffe1e1; 
+	color: #67e5e5; 
 	font-size: 1.6em; 
-	animation: fadein-title-myname 0.5s ease-in-out forwards;
+	animation: fadein-title-myname 0.2s ease-in-out forwards;
 }
 
 @keyframes fadein-title-myname {
 	from {
 		font-size: 1em;
-		/* text-shadow: 0px 0px 5px rgba(225, 196, 253, 0.747), 0 0 0.2em rgb(224, 240, 239), 0 0 0.2em blue; */
 	
 	}
 	to {
-		color: #a5ffece0;
+		color: #67e5e5f1;
 		font-size: 1.8em;
 		text-shadow: none;
 	
