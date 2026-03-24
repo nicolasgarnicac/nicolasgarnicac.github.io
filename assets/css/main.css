@@ -3312,9 +3312,6 @@ input, select, textarea {
 	border-bottom: 1px solid #4a4655;
 	border-right: 1px solid #4a4655;
 	background-image: linear-gradient(135deg, #ffffff3b, #00000000, #00000000, #000000e7);
-
-
-	
 }
 
 .project-name{
@@ -3338,6 +3335,10 @@ input, select, textarea {
 	background: #4a455c81; /* Semi-transparent white */
 	backdrop-filter: blur(10px); /* Apply blur effect to background */
 	-webkit-backdrop-filter: blur(10px); /* Safari support */
+	/* border-bottom: 1px solid #67e5e5e3;
+	border-top: 1px solid #67e5e5e3;
+	border-right: 1px solid #67e5e5e3;
+	border-left: 1px solid #67e5e5e3; */
 	cursor: pointer;
 }
 
@@ -3447,7 +3448,7 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: all 0.2s;
 	color: #aff0f6;
 	/* text-shadow: 0 0 20px #ffffffde; */
 	padding-left: 20px;
@@ -3489,23 +3490,31 @@ input, select, textarea {
     /* box-shadow: 5px 5px 10px rgba(228, 206, 248, 0.747);
 	
 	border: 1px solid rgb(225, 196, 253); */
-	color: rgb(222, 255, 255);
+	color: #67e5e5;
 	background-image: linear-gradient(to right, #33303d, #33303d);
 	box-shadow: inset 7px 7px 8px rgba(28, 35, 44, 0), inset -7px -7px 8px rgba(28, 35, 44, 0);
-	text-shadow: 0 0 0px #effcf900;
+	/* text-shadow: 0 0 0px #effcf900; */
+	/* border: 1px solid #67e5e5e3; */
 
 
 }
 
 
-.title-myname{
-	font-weight: bold; 
-	color: #67e5e5; 
-	font-size: 1.6em; 
-	animation: fadein-title-myname 0.2s ease-in-out forwards;
+.title-myname {
+	font-weight: bold !important;
+	/* color: #67e5e5; 
+	font-size: 1.6em;  */
+	/* animation: fadein-title-myname 0.2s ease-in-out forwards; */
+	color: #67e5e5f1 !important;
+	font-size: 1.8em !important;
+	/* cursor: pointer; */
 }
 
-@keyframes fadein-title-myname {
+.title-myname:hover {
+	color: #9cffff !important;
+	transition: 200ms;
+}
+/* @keyframes fadein-title-myname {
 	from {
 		font-size: 1em;
 	
@@ -3516,7 +3525,7 @@ input, select, textarea {
 		text-shadow: none;
 	
 	}
-}
+} */
 
 .tags{
 	background-color: #fff; 
